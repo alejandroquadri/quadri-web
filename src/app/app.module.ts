@@ -1,8 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -37,7 +39,8 @@ import { LandingComponent } from './landing/landing.component';
     LandingComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
+    NgtUniversalModule,
     HttpModule,
     RouterModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -54,6 +57,5 @@ import { LandingComponent } from './landing/landing.component';
     StaticService,
     ContactFormService
   ],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
