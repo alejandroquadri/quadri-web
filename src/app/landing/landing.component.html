@@ -5,7 +5,7 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
 -->
 
 <div  *ngIf="carrousel"  class="carousel-wrapper d-flex">
-  <ngb-carousel [interval]="0"  [showNavigationArrows]="false" (slide)="cambio($event)">
+  <ngb-carousel [interval]="0"  [showNavigationArrows]="false" [showNavigationIndicators]="indicators" (slide)="cambio($event)">
   
     <ng-template ngbSlide *ngFor="let slide of slidesArray" >
 
@@ -14,10 +14,10 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
         <div class="caption-wrapper d-flex flex-column justify-content-center jumbotron bg-transparent m-0">
           <div class="text-wrapper">
             <div class="oneliner">{{ slidesData[slide].title }}</div>
-            <div class="sub-liner">{{ slidesData[slide].subTitle }}</div>
+            <!-- <div class="sub-liner">{{ slidesData[slide].subTitle }}</div> -->
           </div>
           <div class="button-wrapper">
-            <button type="button" class="btn btn-lg botonComprar" (click)= "toProducts()">Comprar</button>
+            <button type="button" class="btn btn-lg botonComprar" [routerLink]="['/productos']">Comprar</button>
             <button type="button" class="ml-2 btn btn-lg btn-outline-secondary botonConocer" (click)= "more()">Conocer mas</button>
           </div>
         </div>
@@ -41,12 +41,16 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
       <!-- <img class="logo ml-4" [src]="logo"> -->
       <div class="oneliner">MÉTASELO EN EL ORTO</div>
       <div class="botones">
-        <button type="button" class="btn btn-lg botonComprar" (click)= "toProducts()">Comprar</button>
-        <button type="button" class="ml-2 btn btn-lg btn-outline-secondary botonConocer" (click)= "more()">Conocer mas</button>
+        <button type="button" class="btn btn-lg botonComprar" [routerLink]="['/productos']">Comprar</button>
+        <button type="button" class="ml-2 btn btn-lg btn-outline-secondary botonConocer" [routerLink]="['/nosotros']">Conocer mas</button>
       </div>
     </div>
   </div>
   
+</div>
+
+<div #terrazzo>
+  <app-terrazzo></app-terrazzo>
 </div>
 
 <app-steps></app-steps>

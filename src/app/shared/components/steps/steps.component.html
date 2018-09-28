@@ -3,23 +3,12 @@
     <div class="text-center title">
       ¿Donde empezar?
     </div>
+
     <div class="row">
-      <div class=" item-wrapper col-md-4 col-sm-12 d-flex flex-column align-items-center">
-        <div class="align-self-center px-3 rounded-circle number text-center">1</div>
+      <div class=" item-wrapper col-md-4 col-sm-12 d-flex flex-column align-items-center" *ngFor="let step of data.text; let i = index">
+        <div class="align-self-center px-3 rounded-circle number text-center"> {{ i + 1}} </div>
         <div class="text-center text">
-          Encuentra el producto adecuado para tu proyecto usando la guia de aplicaciones
-        </div>
-      </div>
-      <div class="item-wrapper col-md-4 col-sm-12 d-flex flex-column align-items-center">
-        <div class="align-self-center px-3 rounded-circle number text-center" >2</div>
-        <div class="text-center text">
-          Contactanos y cuentanos los detalles de tu proyecto para que podamos ayudarte
-        </div>
-      </div>
-      <div class="item-wrapper col-md-4 col-sm-12 d-flex flex-column align-items-center">
-        <div class="align-self-center px-3 rounded-circle number text-center">3</div>
-        <div class="text-center text" >
-          Juntos lograremos crear un espacio sofisticado, elefante y especial
+          {{ step }}
         </div>
       </div>
     </div>

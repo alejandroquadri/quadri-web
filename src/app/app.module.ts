@@ -26,9 +26,9 @@ import {
 } from './shared';
 
 import { ContactComponent } from './contact/contact.component';
-// import { ProductsComponent } from './products/products.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
 
 // esto es para precargar la data antes que se inicie la aplicacion
 export function DataProviderFactory(provider: StaticService) {
@@ -39,9 +39,9 @@ export function DataProviderFactory(provider: StaticService) {
   declarations: [
     AppComponent,
     ContactComponent,
-    // ProductsComponent,
     ProjectsComponent,
     LandingComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'quadri-web' }),

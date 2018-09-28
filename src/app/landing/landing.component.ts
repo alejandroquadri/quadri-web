@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Inject } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject, ElementRef } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -22,8 +22,10 @@ export class LandingComponent implements OnInit {
 
   slidesData: any;
   slidesArray: Array<any>;
+  indicators: boolean;
 
   // @ViewChild('slide1') slide1;
+  @ViewChild('terrazzo') terrazzo: ElementRef;
 
   constructor(
     private staticData: StaticService,
@@ -36,6 +38,7 @@ export class LandingComponent implements OnInit {
 
     this.slidesData = this.staticData.data.landing.slides;
     this.slidesArray = Object.keys(this.slidesData);
+    this.slidesArray.length > 1 ? this.indicators = true : this.indicators = false ;
   }
 
   ngOnInit() {
@@ -78,7 +81,7 @@ export class LandingComponent implements OnInit {
   }
 
   more() {
-    this.router.navigate(['/aplicaciones']);
+    this.terrazzo.nativeElement.scrollIntoView({ block: 'start', inline: 'nearest',  behavior: 'smooth' });
   }
 
 }

@@ -41,7 +41,8 @@
 }
 
 .background {
-  background-color: var(--green-dark);
+  // background-color: var(--green-dark);
+  background-color: transparent;
   height: 100%;
   width: 100%;
   background-position: center;
@@ -54,16 +55,23 @@
   filter: brightness(80%);
 }
 
-.text-wrapper {
+.text-wrapper, .spinner-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   font-size: 1.8rem;
-  // font-weight: 100;
-  color: white;
+  color: transparent;
   height: 100%;
   width: 100%;
+}
+
+.spinner-wrapper {
+  background-color: var(--green-dark);
+}
+
+.show-text {
+  color: white;
 }
 
 .text-wrapper:hover {
@@ -77,6 +85,11 @@
   -o-filter: brightness(60%);
   -ms-filter: brightness(60%);
   filter: brightness(60%);
+}
+
+.spinner {
+  font-size: 3rem;
+  color: black;
 }
 
 @media (max-width: 767.98px) {

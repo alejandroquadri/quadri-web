@@ -56,13 +56,16 @@
 
 .text-wrapper {
   padding-bottom: 2rem;
+  display: flex;
 }
 
 .oneliner {
 	color: white;
-  font-size: 5rem;
+  font-size: 8vh;
   font-weight: 100;
   line-height: 1.6;
+  width: 80%;
+  margin: auto
 }
 
 .sub-liner {
@@ -114,7 +117,11 @@
 
 	.desktop {
 		display: none;
-	}
+  }
+  
+  .oneliner {
+    font-size: 3rem;
+  }
 
 }
 

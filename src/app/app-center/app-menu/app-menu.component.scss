@@ -56,12 +56,17 @@
   margin-right: auto;
 }
 
-.appText {
+.appText, .spinner-wrapper {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  cursor: pointer;
+  cursor: pointer; 
+}
+
+.spinner-wrapper {
+  background-color: var(--green-dark);
 }
 
 .appNames {
@@ -69,6 +74,11 @@
   font-weight: 200;
   letter-spacing: 0.2rem;
   color: white;
+}
+
+.spinner {
+  font-size: 3rem;
+  color: black;
 }
 
 // esto hay que arreglarlo para moviles

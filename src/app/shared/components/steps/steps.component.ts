@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StaticService } from '../../services';
 
 @Component({
   selector: 'app-steps',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StepsComponent implements OnInit {
 
-  constructor() { }
+  data: any;
+
+  constructor(
+    private staticData: StaticService
+  ) { }
 
   ngOnInit() {
+    this.data = this.staticData.data.components.steps;
   }
 
 }

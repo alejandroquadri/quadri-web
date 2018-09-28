@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, ViewChild, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { StaticService } from '../../shared';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-app-menu',
@@ -11,6 +12,8 @@ export class AppMenuComponent implements OnInit {
 
   data: any;
   appMenu: any;
+
+  spinner = faSpinner;
 
   // @ViewChild('pisosInt') pisosInt: ElementRef; lo dejo para tener de referencia como intervenir un elemento
   @ViewChild('pisosExt') pisosExt: ElementRef;

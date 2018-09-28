@@ -10,11 +10,17 @@
 <div class="jumbotron jumbotron-fluid mb-0 bg-transparent">
   <div class="container">
     <div class="d-flex product-container">
-      <div *ngFor="let prod of productsArray" class="prod" (click)="routeTo(prod)">
+      <div *ngFor="let prod of (products | toArray)| sort:'order':true:false" class="prod" (click)="routeTo(prod.$key)">
+        <div class="spinner-wrapper d-flex align-items-center">
+          <div class="text-center w-100 spinner">
+            <fa-icon class="icons p-3" [icon]="spinner" [spin]="true"></fa-icon>
+          </div>
+        </div>
+        <img [src]="prod.menu" [hidden]="true" (load)="lineText.className = 'text-wrapper d-flex align-items-center show-text'">
         <div class="background" 
-        [ngStyle]="{'background-image': 'url(' + products[prod].menu + ')'}"></div>
-        <div class="text-wrapper d-flex align-items-center">
-          <div class="text-center w-100 prod-name"> {{ products[prod].name }} </div>
+        [ngStyle]="{'background-image': 'url(' + prod.menu + ')'}"></div>
+        <div #lineText class="text-wrapper d-flex align-items-center">
+          <div class="text-center w-100 prod-name"> {{ prod.name }} </div>
         </div>
       </div>
     </div>

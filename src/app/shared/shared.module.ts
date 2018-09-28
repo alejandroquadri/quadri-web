@@ -16,11 +16,16 @@ import { SpinnerComponent } from './ui/spinner/spinner.component';
 import { StepsComponent } from './components/steps/steps.component';
 import { TrustQuadriComponent } from './components/trust-quadri/trust-quadri.component';
 import { BlendsComponent } from './components/blends/blends.component';
+import { TerrazzoComponent } from './components/terrazzo/terrazzo.component';
 
 // directives
 import { HoverDirective } from './directives/hover.directive';
 import { DimComponent } from './components/dim/dim.component';
 import { ApplicationsComponent } from './components/applications/applications.component';
+
+// pipes
+import { ToArrayPipe } from './pipes/to-array.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 @NgModule({
   imports: [
@@ -44,7 +49,10 @@ import { ApplicationsComponent } from './components/applications/applications.co
     HoverDirective,
     BlendsComponent,
     DimComponent,
-    ApplicationsComponent
+    ApplicationsComponent,
+    SortPipe,
+    ToArrayPipe,
+    TerrazzoComponent
   ],
   exports: [
     CommonModule,
@@ -59,9 +67,12 @@ import { ApplicationsComponent } from './components/applications/applications.co
     StepsComponent,
     TrustQuadriComponent,
     BlendsComponent,
-    HoverDirective,
     DimComponent,
-    ApplicationsComponent
+    TerrazzoComponent,
+    ApplicationsComponent,
+    HoverDirective,
+    SortPipe,
+    ToArrayPipe
   ]
 })
 export class SharedModule { }
