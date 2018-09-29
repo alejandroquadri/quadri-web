@@ -4,11 +4,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProdMenuComponent } from './prod-menu/prod-menu.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { QuarzoComponent } from './quarzo/quarzo.component';
 
 const routes: Routes = [
   {
     path: '',
     component: ProdMenuComponent
+  },
+  {
+    path: 'quarzo',
+    component: QuarzoComponent
   },
   {
     path: ':id',

@@ -5,6 +5,8 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProdMenuComponent } from './prod-menu/prod-menu.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { QuarzoComponent } from './quarzo/quarzo.component';
+
 import { SharedModule } from '../shared';
 
 @NgModule({
@@ -16,6 +18,7 @@ import { SharedModule } from '../shared';
   declarations: [
     ProdMenuComponent,
     ProductComponent,
+    QuarzoComponent,
     ProductDetailComponent
   ]
 })

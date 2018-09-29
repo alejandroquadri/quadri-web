@@ -1,0 +1,57 @@
+<div class="prod-header-wrapper">
+  <div class="jumbotron jumbotron-fluid imagen-presentacion mb-0"
+    [ngStyle]="{'background-image': 'url(' + product.presentacion + ')'}"></div>
+  <div class="title-wrapper jumbotron mb-0 bg-transparent">
+    <div class="container">
+      <div class="title">{{ product.name }}</div>
+      <p class="sub-title">{{ product.text }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="description container">
+
+		<div class="d-flex flex-column flex-md-row justify-content-md-around mb-5">
+			<div class="divImg rounded" [ngStyle]="{'background-image': 'url(' + product.featureImgs[0] + ')'}"></div>
+			<div class="text align-self-center text-justify pt-3">
+				<div class="feature-title">Sin juntas</div>
+				<div class="feature-text">
+					Pisos continuos, sin limites, el tamaño los pones vos. Pisos que lucen fantasticos en grandes espacios y dan sensacion de amplitud en los mas pequeños.
+				</div>
+			</div>
+		</div>
+
+  	<div class="d-flex flex-column flex-md-row justify-content-around mb-5">
+  		<div class="d-flex text flex-wrap align-content-center">
+  			<div class="feature-title">Mantenimiento cero</div>
+	  		<div class="feature-text">
+	  			La matriz de Quarzo, esta compuesta de resinas completamente impermeables y de alta resistencia quimica. Nunca ha sido tan simple mantener tus pisos como nuevos
+	  		</div>
+  		</div>
+  		<div class="divImg rounded" [ngStyle]="{'background-image': 'url(' + product.featureImgs[1] + ')'}"></div>
+		</div>
+
+		<div class="d-flex flex-column flex-md-row justify-content-around mb-5">
+			<div class="divImg rounded order-2 order-md-1" [ngStyle]="{'background-image': 'url(' + product.featureImgs[2] + ')'}"></div>
+  		<div class="d-flex text flex-wrap align-content-center order-1 order-md-2">
+  			<div class="feature-title">Infinitos colores</div>
+	  		<div class="feature-text">
+	  			Elije un color de nuestra curada carta de colores, o crea tu propia tonalidad. Ya no hay limites a tus diseños. Nuestros tecnicos te ayudaran a hacer de tus proyectos algo unico
+	  		</div>
+	  	</div>
+		</div>
+
+		<div class="d-flex flex-column">
+			<div class=" text-center mb-3 feature-title">El trabajo lo hacemos nosotros</div>
+  		<div class="feature-text text-justify m-auto" style="width: 90%;">
+  			Elegir el material a colocar, conseguir quien lo venda y tenga stock, determinar el computo para que no sobre ni falte, coordinar el envio, recibir el material, acopiarlo hasta que sea colocado, coordinar contratistas para la instalacion, calcular pegamentos y pastinas para la colocacion... Y sigue la lista. 
+	  		<br>
+  			Dejanos el trabajo pesado a nosotros. Concentrate solo en el el diseño. En 3 dias tu piso estara colocado y listo para ser transitado
+  		</div>
+		</div>
+  		
+</div>
+
+<app-blends *ngIf="product.colors"  [colors]="product.colors"></app-blends>
+<!-- <app-dim *ngIf="product.dim"  [dim]="product.dim" [thikness]="product.thickness"></app-dim> -->
+<app-applications [applications]="product.applications" ></app-applications>
