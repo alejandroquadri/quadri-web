@@ -4,6 +4,7 @@
 
 .project-presentacion {
   height: 30vh;
+  height: calc(var(--vh, 1vh) * 30);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

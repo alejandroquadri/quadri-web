@@ -14,6 +14,7 @@ export class ApiService {
 
   saludo = 'Hola';
   url = 'http://quadriserver.ddns.net:3100/api';
+  // url = 'http://localhost:3100/api';
 
   constructor(
     public http: Http,

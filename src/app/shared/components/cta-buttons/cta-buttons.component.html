@@ -1,0 +1,17 @@
+<div class="button-wrapper" [ngClass]="{ 'button-wrapper-start': buttonsStart }">
+  <div class="first-button">
+    <button *ngIf="primary" type="button" class="btn btn-lg botonComprar" (click)="openModal()" >
+      {{ pText || data.primary }}
+    </button>
+  </div>
+  <div class="button">
+    <button [ngClass]="{ 'botonConocer': lightTheme }" *ngIf="secondary" type="button" class="btn btn-lg btn-outline-secondary" (click)= "getSec()">
+        {{ sText || data.secondary }}
+    </button>   
+  </div>
+  <div class="button">
+    <button [ngClass]="{ 'botonConocer': lightTheme }" *ngIf="terciary" type="button" class="btn btn-lg btn-outline-secondary" (click)= "getTer()">
+        {{ tText || terButton }}
+    </button>
+  </div>
+</div>

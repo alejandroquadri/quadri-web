@@ -47,30 +47,4 @@ export class AppMenuComponent implements OnInit {
   //   this.renderer.removeClass(el.nativeElement, 'customDark');
   // }
 
-  // wichApp(app: string) {
-  //   let result;
-  //   switch (app) {
-  //     case 'pisosInt':
-  //       result = this.pisosInt;
-  //       break;
-
-  //     case 'pisosExt':
-  //       result = this.pisosExt;
-  //       break;
-
-  //     case 'paredInt':
-  //       result = this.paredInt;
-  //       break;
-
-  //     case 'paredExt':
-  //       result = this.paredExt;
-  //       break;
-
-  //     case 'mesas':
-  //       result = this.mesas;
-  //       break;
-  //   }
-  //   return result;
-  // }
-
 }

@@ -1,6 +1,7 @@
 .trust-wrapper {
   background-color: var(--grey-light);
   color: white;
+  padding-bottom: 0px;
 }
 
 .items{
@@ -12,7 +13,7 @@
 }
 
 .sub-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .text {
@@ -29,6 +30,10 @@
 
 @media (max-width : 415px) {
 
+  .trust-wrapper {
+    padding-bottom: 1rem;
+  }
+
   .items{
     padding: 0rem 3rem 0rem 3rem;
   }
@@ -37,4 +42,16 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+  .icons {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .text {
+    font-size: 1rem;
+  }
+
 }

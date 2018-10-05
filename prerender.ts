@@ -18,9 +18,26 @@ import * as fs from 'fs-extra';
 const ROUTES = [
   '/',
   '/aplicaciones',
+  '/aplicaciones/pisos-interiores',
+  '/aplicaciones/pisos-exteriores',
+  '/aplicaciones/revestimientos',
+  '/aplicaciones/mesas',
   '/productos',
+  '/productos/classic',
+  '/productos/glass',
+  '/productos/3d',
+  '/productos/brick',
+  '/productos/losetas',
+  '/productos/losetas/6040',
+  '/productos/losetas/16P',
+  '/productos/losetas/64P',
+  '/productos/losetas/8V',
+  '/productos/quarzo',
+  '/productos/rusticato',
+  '/productos/solid',
   '/inspiracion',
-  '/contacto'
+  '/contacto',
+  '/nosotros'
 ];
 
 const APP_NAME = 'quadri-web';

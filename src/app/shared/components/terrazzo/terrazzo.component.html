@@ -1,14 +1,15 @@
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="text-center title">
-        {{ data.title }}
-      </div>
-      <div class="text">
-        <div *ngFor="let p of data.text" class="p">{{ p }}</div>
-      </div>
-      <div class="botones">
-        <button type="button" class="btn btn-lg botonComprar" [routerLink]="['/productos']" >Comprar</button>
-        <button type="button" class="ml-2 btn btn-lg btn-outline-secondary botonConocer" [routerLink]="['/nosotros']">Conocer mas</button>
-      </div>
+<div class="jumbotron jumbotron-fluid m-0">
+  <div class="container">
+    <div class="text-center title">
+      {{ data.title }}
     </div>
+    <div class="text">
+      <div *ngFor="let p of data.text" class="p">{{ p }}</div>
+    </div>
+    <div class="botones">
+    <app-cta-buttons [changeTheme]="true" [primary]="true" 
+    [terciary]="true" [tText]="'¡mas historia!'" (ter)="router.navigate(['/nosotros'])"
+    [secondary]="true" [sText]="'ver colecciones'" (sec)="router.navigate(['/productos'])"
+    ></app-cta-buttons>
+  </div>
 </div>

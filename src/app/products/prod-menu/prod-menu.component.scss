@@ -4,6 +4,7 @@
 
 .imagen-presentacion, {
   height: 30vh;
+  height: calc(var(--vh, 1vh) * 30);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,7 +93,7 @@
   color: black;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 
   .product-container{
     flex-direction: column;
@@ -111,3 +112,16 @@
   }
 
  }
+
+ @media (max-width: 320px) {
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .prod {
+    height: 15rem;
+    width: 15rem;
+  }
+
+}

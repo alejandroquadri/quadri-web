@@ -6,6 +6,8 @@
   background-color: var(--green-dark);
   color: white;
   font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem; 
 }
 
 .text {
@@ -20,6 +22,10 @@
   font-weight: 100;
 }
 
+.buttons {
+  text-align: center;
+}
+
 @media (max-width : 415px) {
 
   .item-wrapper{
@@ -27,7 +33,14 @@
     padding-bottom:1rem;
   }
 
+  .number {
+    font-size: 1.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
   .title {
+    font-size: 2rem;
     padding-bottom: 1rem; 
   }
 
@@ -35,5 +48,14 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+}
+
+@media (max-width: 320px) {
+
+  .text {
+    font-size: 1rem;
+  }
+
 
 }

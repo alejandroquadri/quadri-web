@@ -17,6 +17,7 @@ import { StepsComponent } from './components/steps/steps.component';
 import { TrustQuadriComponent } from './components/trust-quadri/trust-quadri.component';
 import { BlendsComponent } from './components/blends/blends.component';
 import { TerrazzoComponent } from './components/terrazzo/terrazzo.component';
+import { CtaButtonsComponent } from './components/cta-buttons/cta-buttons.component';
 
 // directives
 import { HoverDirective } from './directives/hover.directive';
@@ -26,6 +27,7 @@ import { ApplicationsComponent } from './components/applications/applications.co
 // pipes
 import { ToArrayPipe } from './pipes/to-array.pipe';
 import { SortPipe } from './pipes/sort.pipe';
+import { QueryComponent } from './components/query/query.component';
 
 @NgModule({
   imports: [
@@ -52,7 +54,12 @@ import { SortPipe } from './pipes/sort.pipe';
     ApplicationsComponent,
     SortPipe,
     ToArrayPipe,
-    TerrazzoComponent
+    TerrazzoComponent,
+    CtaButtonsComponent,
+    QueryComponent
+  ],
+  entryComponents: [
+    QueryComponent,
   ],
   exports: [
     CommonModule,
@@ -70,6 +77,7 @@ import { SortPipe } from './pipes/sort.pipe';
     DimComponent,
     TerrazzoComponent,
     ApplicationsComponent,
+    CtaButtonsComponent,
     HoverDirective,
     SortPipe,
     ToArrayPipe

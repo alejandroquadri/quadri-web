@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { StaticService } from './shared';
+import { Component, Inject, HostListener, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
+import { WINDOW } from './shared/services/window.service';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +11,39 @@ import { StaticService } from './shared';
 
 export class AppComponent {
 
-  images: any;
-  imgArray: Array<any>;
+  doc: any;
+  win: any;
+  load = true;
 
   constructor(
-    private staticData: StaticService
+    @Inject(DOCUMENT) document,
+    @Inject(WINDOW) private window: Window,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {
-    this.images = this.staticData.data.projectImgs;
-    this.imgArray = Object.keys(this.images);
+    this.doc = document;
+    this.win = window;
+    this.getVH();
+  }
+
+  @HostListener('window:resize', ['$event'])
+    resize(event) {
+      this.getVH();
+    }
+
+  getVH() {
+    if (isPlatformBrowser(this.platformId)) {
+
+      if (!(this.win.innerWidth < 540 && this.load === false) ) {
+        const vh = this.win.innerHeight * 0.01;
+      // Then we set the value in the --vh custom property to the root of the document
+        this.doc.documentElement.style.setProperty('--vh', `${vh}px`);
+        this.load = false;
+      }
+
+    }
+
+    if (isPlatformServer(this.platformId)) {
+      console.log('serverside');
+    }
   }
 }

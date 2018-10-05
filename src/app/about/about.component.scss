@@ -1,9 +1,11 @@
 .contenedor {
   min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
 }
 
 .featured {
   height: 30vh;
+  height: calc(var(--vh, 1vh) * 30);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

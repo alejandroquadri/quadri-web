@@ -4,6 +4,7 @@
 
 .imagen-presentacion {
   height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,7 +68,7 @@
 }
 
 
-@media (max-width: 744px) {
+@media (max-width: 576px) {
 
   .model-container{
     flex-direction: column;
@@ -90,6 +91,7 @@
 
 	.divImg {
 		height: 35vh;
+    height: calc(var(--vh, 1vh) * 35);
 		width: 100%;
 		background-position: bottom;
 	  background-repeat: no-repeat;
@@ -98,6 +100,30 @@
 
 	.headingMobile {
 		font-size: 3rem;
-	}
+  }
+  
+  .imagen-presentacion {
+    height: 60vh;
+    height: calc(var(--vh, 1vh) * 60)
+  }
 
+}
+
+@media (max-width: 320px) {
+
+  .title {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
+  .imagen-presentacion {
+    height: 70vh;
+    height: calc(var(--vh, 1vh) * 70)
+}
+  
 }

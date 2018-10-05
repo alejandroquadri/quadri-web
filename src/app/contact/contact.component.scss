@@ -1,5 +1,6 @@
 .contenedor {
 	min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
 }
 
 .sebm-google-map-container {

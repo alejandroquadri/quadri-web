@@ -5,6 +5,7 @@
     <div class="container">
       <div class="title">{{ product.name }}</div>
       <p class="sub-title">{{ product.text }}</p>
+      <app-cta-buttons [primary]="true" [interest]="product.name" [buttonsStart]="true"></app-cta-buttons>
     </div>
   </div>
 </div>

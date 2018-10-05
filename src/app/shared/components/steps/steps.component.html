@@ -6,11 +6,17 @@
 
     <div class="row">
       <div class=" item-wrapper col-md-4 col-sm-12 d-flex flex-column align-items-center" *ngFor="let step of data.text; let i = index">
-        <div class="align-self-center px-3 rounded-circle number text-center"> {{ i + 1}} </div>
+        <div class="align-self-center rounded-circle number text-center"> {{ i + 1}} </div>
         <div class="text-center text">
           {{ step }}
         </div>
       </div>
+    </div>
+    <div class="buttons">
+      <app-cta-buttons [changeTheme]="true" [primary]="true" 
+      [terciary]="true" [sText]="'guia de aplicaciones'" (sec)="router.navigate(['/aplicaciones'])"
+      [secondary]="true" [tText]="'ver colecciones'" (ter)="router.navigate(['/productos'])"
+      ></app-cta-buttons>
     </div>
   </div>
 </div>

@@ -1,10 +1,11 @@
 
-.container-fluid {
-  min-height: calc(100vh - 56px)
-}
+// .container-fluid {
+//   min-height: calc(100vh - 56px)
+// }
 
 .carousel-wrapper {
   height: calc(100vh - var(--navbar-height));
+  height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
   background-color: var(--green-light);
 }
 
@@ -120,7 +121,23 @@
   }
   
   .oneliner {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .oneliner {
+    font-size: 2rem;
+  }
+
+  .caption-wrapper {
+    padding-top: 1rem;
+  }
+
+  .text-wrapper {
+    padding-bottom: 1rem;
   }
 
 }

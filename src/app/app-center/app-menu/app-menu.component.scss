@@ -1,5 +1,6 @@
 .apps {
   height: calc(100vh - var(--navbar-height));
+  height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
 }
 
 .row {
@@ -90,6 +91,24 @@
 
   .row {
     height: calc(100vh - var(--navbar-height));
+    height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
   }
 
  }
+
+ @media (max-width: 576px) {
+
+  .iconsH {
+    width: 8rem;
+    height: auto;
+  }
+  
+  .iconsV {
+    height: 8rem;
+  }
+
+  .appNames {
+    font-size: 1.2rem;
+  }
+
+}

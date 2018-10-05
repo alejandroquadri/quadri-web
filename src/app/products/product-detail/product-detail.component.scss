@@ -4,6 +4,7 @@
 
 .imagen-presentacion {
   height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,6 +31,7 @@
 
 .sub-title {
   font-size: 3.5vh;
+  font-size: calc(var(--vh, 1vh) * 3.5);
   font-weight: 100;
 }
 
@@ -69,11 +71,30 @@
   filter: brightness(80%);
 }
 
-@media (max-width: 744px) {
+@media (max-width: 576px) {
 
   .sub-title {
     font-size: 1rem;
     font-weight: 100;
   }
 
+  .imagen-presentacion {
+    height: 60vh;
+    height: calc(var(--vh, 1vh) * 70)
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .title {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
 }

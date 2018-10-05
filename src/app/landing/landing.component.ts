@@ -22,14 +22,15 @@ export class LandingComponent implements OnInit {
 
   slidesData: any;
   slidesArray: Array<any>;
-  indicators: boolean;
+  navIndicators = false;
+  navArrows: boolean;
 
   // @ViewChild('slide1') slide1;
   @ViewChild('terrazzo') terrazzo: ElementRef;
 
   constructor(
     private staticData: StaticService,
-    private router: Router,
+    public router: Router,
     @Inject(DOCUMENT) document
   ) {
     this.doc = document;
@@ -38,7 +39,7 @@ export class LandingComponent implements OnInit {
 
     this.slidesData = this.staticData.data.landing.slides;
     this.slidesArray = Object.keys(this.slidesData);
-    this.slidesArray.length > 1 ? this.indicators = true : this.indicators = false ;
+    this.slidesArray.length > 1 ? this.navArrows = true : this.navArrows = false ;
   }
 
   ngOnInit() {
@@ -82,6 +83,10 @@ export class LandingComponent implements OnInit {
 
   more() {
     this.terrazzo.nativeElement.scrollIntoView({ block: 'start', inline: 'nearest',  behavior: 'smooth' });
+  }
+
+  terciary(ter) {
+    console.log(ter);
   }
 
 }

@@ -23,7 +23,6 @@ export class ProductDetailComponent implements OnInit {
     this.prod = this.route.snapshot.paramMap.getAll('id')[0];
     this.model = this.route.snapshot.paramMap.getAll('prod')[0];
     this.modelData = this.staticData.data.products.collections[this.prod].models[this.model];
-    console.log(this.prod, this.model, this.modelData);
   }
 
 }
