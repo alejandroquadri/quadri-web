@@ -39,7 +39,6 @@ export class AppComponent {
         this.doc.documentElement.style.setProperty('--vh', `${vh}px`);
         this.load = false;
       }
-
     }
 
     if (isPlatformServer(this.platformId)) {

@@ -1,4 +1,5 @@
-import { Component, OnInit, Renderer } from '@angular/core';
+import { Component, OnInit, Renderer, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import {
   trigger,
   state,
@@ -33,7 +34,7 @@ import { ContactService } from './../shared/services/contact.service';
 export class ContactComponent implements OnInit {
 
   myForm: FormGroup;
-
+  showMap: boolean;
   thanks = 'hide';
 
   title = 'My first AGM project';
@@ -47,8 +48,18 @@ export class ContactComponent implements OnInit {
   constructor(
     private contactData: ContactService,
     private fb: FormBuilder,
-    private renderer: Renderer
-  ) { }
+    private renderer: Renderer,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    // esto es porque el componente de mapa usa la window y al renderizar para servidor
+    // tira un error
+    if (isPlatformBrowser(this.platformId)) {
+      this.showMap = true;
+    }
+    if (isPlatformServer(this.platformId)) {
+      this.showMap = false;
+    }
+  }
 
   ngOnInit() {
     this.buildForm();
