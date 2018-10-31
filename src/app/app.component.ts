@@ -25,7 +25,6 @@ export class AppComponent {
     this.doc = document;
     this.win = window;
     this.getVH();
-    // this.analytics();
     this.analyticsS.trackRouter();
   }
 

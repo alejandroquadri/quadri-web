@@ -1,8 +1,11 @@
 {
+  "about" : {
+    "featured" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fvagones.jpg?alt=media&token=0b4b1d33-6508-4fd3-a52c-3f60213c3ad4"
+  },
   "appMenu" : {
     "mesas" : {
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FmesaBlanco.png?alt=media&token=4356b2c5-b62d-4335-9ce4-a504ec96fd4d",
-      "img" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FmesitasTerrazzo.jpg?alt=media&token=1ab8ae24-747a-430a-915c-8751e759cf3b",
+      "img" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fvaca-web.jpeg?alt=media&token=58c63a09-6386-42fb-a84b-f0652bc74af9",
       "text" : "Mesas y barras"
     },
     "pisosExt" : {
@@ -24,38 +27,42 @@
   "apps" : {
     "mesas" : {
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FmesaBlanco.png?alt=media&token=4356b2c5-b62d-4335-9ce4-a504ec96fd4d",
-      "icon-black" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FmesaNegro.png?alt=media&token=0526a772-1742-4684-ae42-b90b78bd6a7a",
-      "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FmesitasTerrazzo.jpg?alt=media&token=1ab8ae24-747a-430a-915c-8751e759cf3b",
-      "products" : [ "classic", "glass", "solid", "vaca" ],
-      "texto" : "Terrazzo, un material versatil y en plena tendencia. Este material espectacular y totalmente customizable convertira tus mesas en un elemento de singular destaque y originalidad",
+      "iconBlack" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FmesaNegro.png?alt=media&token=0526a772-1742-4684-ae42-b90b78bd6a7a",
+      "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fvaca-web.jpeg?alt=media&token=58c63a09-6386-42fb-a84b-f0652bc74af9",
+      "products" : [ "vaca", "glass", "solid" ],
+      "texto" : "El terrazzo es un material versatil y en plena tendencia. Ademas es totalmente customizable, convertira tus mesas en un elemento de singular destaque y originalidad",
       "titulo" : "Mesas y barras"
     },
     "pisosExt" : {
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FpisoExtBlanco.png?alt=media&token=72a5aa77-a73e-4d06-9cae-eb0f25ea2f35",
-      "icon-black" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FpisoExtNegro.png?alt=media&token=3eb65e93-d2ae-4db8-8c3f-a35dcef324fa",
+      "iconBlack" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FpisoExtNegro.png?alt=media&token=3eb65e93-d2ae-4db8-8c3f-a35dcef324fa",
       "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fpatrones2.JPG?alt=media&token=51ddca61-65b2-4701-835c-8e8250610885",
-      "products" : [ "classic", "glass", "solid", "vaca", "losetas", "rusticato", "calcareos" ],
-      "texto" : "Terrazzo, un material versatil y en plena tendencia. Este material espectacular y totalmente customizable convertira tus mesas en un elemento de singular destaque y originalidad",
+      "products" : [ "losetas", "rusticato" ],
+      "texto" : "Decoramos plazas, parques y veredas. Aprovecha las diversas terminaciones, texturas, colores y tamaños de piezas para obtener patrones unicos",
       "titulo" : "Pisos exteriores"
     },
     "pisosInt" : {
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FparedIntBlanco.png?alt=media&token=ccffd480-9897-4138-bbab-a37cbad30fa6",
-      "icon-black" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FpisoIntNegro.png?alt=media&token=98ecdf99-6ace-4a35-b94b-24ad67d5b02e",
+      "iconBlack" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FpisoIntNegro.png?alt=media&token=98ecdf99-6ace-4a35-b94b-24ad67d5b02e",
       "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcuarto.jpg?alt=media&token=a14ac797-7f90-4558-9779-78156b9ce816",
       "products" : [ "classic", "glass", "solid", "vaca", "quarzo" ],
-      "texto" : "Terrazzo, un material versatil y en plena tendencia. Este material espectacular y totalmente customizable convertira tus mesas en un elemento de singular destaque y originalidad",
+      "texto" : "Resistente al paso del tiempo. Desde tonos sobrios y suaves a terminaciones singulares y llamativas",
       "titulo" : "Pisos Interiores"
     },
     "revestimientos" : {
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FparedExtBlanco.png?alt=media&token=b73166fe-e68c-4ee8-a108-64d0b90f56ec",
-      "icon-black" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FparedExtNegro.png?alt=media&token=71433fca-a3d3-4077-b45d-398b316cad87",
+      "iconBlack" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FparedExtNegro.png?alt=media&token=71433fca-a3d3-4077-b45d-398b316cad87",
       "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcocina.jpg?alt=media&token=ec71ebc7-5ca4-489f-8963-18434f1be485",
-      "products" : [ "rusticato", "3d", "brick" ],
-      "texto" : "Terrazzo, un material versatil y en plena tendencia. Este material espectacular y totalmente customizable convertira tus mesas en un elemento de singular destaque y originalidad",
+      "products" : [ "brick", "3d", "glass", "vaca", "solid" ],
+      "texto" : "Luces y sombras. Diferentes formas. Distintas texturas. Variados colores. Desata tu creatividad!",
       "titulo" : "Revestimientos"
     }
   },
   "colors" : {
+    "arena" : {
+      "name" : "Arena",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FArena.jpg?alt=media&token=cb4a390e-4eb5-46a9-a2f6-f408a71be4fe"
+    },
     "blanco" : {
       "name" : "Blanco",
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2FBlanco.jpg?alt=media&token=5ab8f3c5-f218-4fae-846b-fdb5aa355226"
@@ -63,6 +70,10 @@
     "blanco-espuma" : {
       "name" : "Blanco espuma",
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2FB%20Espuma.jpg?alt=media&token=997a5d4b-a315-46e8-83a2-b653bc727254"
+    },
+    "botichino" : {
+      "name" : "Botichino",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2Fbotichino.jpg?alt=media&token=1a1ef30f-6bda-4f90-a813-361100f0e105"
     },
     "brechiato" : {
       "name" : "Brechiato",
@@ -74,7 +85,7 @@
     },
     "grafito" : {
       "name" : "Grafito",
-      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2FNegroCemento.jpg?alt=media&token=10761666-c124-453c-8a67-fe2ab7633527"
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FGrafito.jpg?alt=media&token=517fac61-f33f-4455-a740-48745b975849"
     },
     "gris-cemento" : {
       "name" : "Plata",
@@ -84,9 +95,21 @@
       "name" : "Acero",
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2FGris%20Plomo.jpg?alt=media&token=a099e900-cb2e-49eb-b06b-d60fb6606c4f"
     },
+    "napoleon" : {
+      "name" : "Napoleon",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2Fnapoleon.JPG?alt=media&token=5b5058fb-5b20-4ff0-9c39-465fcf38513a"
+    },
+    "plata" : {
+      "name" : "Plata",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FPlata.jpg?alt=media&token=ff3d02a0-641a-4dd2-8f24-9e9e6ee675ee"
+    },
     "rosa" : {
       "name" : "Rosa",
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2FRosa.jpg?alt=media&token=1a3e856e-07b1-4ea2-af51-504174718a51"
+    },
+    "sierraChica" : {
+      "name" : "Sierra Chica",
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2FsierraChica.jpg?alt=media&token=7fc3a03b-8f9e-470f-916a-a5950b3bbf69"
     },
     "vaca-marciana" : {
       "name" : "Vaca marciana",
@@ -95,6 +118,20 @@
     "verde-alpe" : {
       "name" : "Negro",
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/colors%2FVerde%20Alpe.jpg?alt=media&token=3841faff-6f5b-4cf7-83df-5fe69e0f6f06"
+    }
+  },
+  "components" : {
+    "cta" : {
+      "primary" : "Consultar precio",
+      "secondary" : "+ INFO"
+    },
+    "steps" : {
+      "text" : [ "Encuentra en nuestra guía de aplicaciones productos, colores y texturas que se ajusten a tu visión", "Si no estas seguro, escribinos y mandanos fotos. Te brindaremos asesoramiento profesional", "Juntos encontraremos el producto que hará de tu espacio algo único y sofisticado" ],
+      "title" : "¿Donde empezar?"
+    },
+    "terrazzo" : {
+      "text" : [ "El terrazzo es moderno, tradicional y eterno. A la vez. Puede venir en distintas aplicaciones con sorprendentes y diferentes terminaciones.", "Esencialmente es una base de cemento o resinas con agregados de mármol, granito y otros materiales reciclables. Esto aporta su singular riqueza y apariencia multi-tonal.", "Fabricamos pisos y revestimientos de terrazzo desde con 1861 con orgullo y fanática dedicación." ],
+      "title" : "Fabricamos terrazzo"
     }
   },
   "dim" : {
@@ -133,23 +170,17 @@
         "products" : [ "solid", "3D" ],
         "text" : "Aca es donde escribimos alguna pelotudez de lo increible que es la obra. Lo espectacular que son nuestros productos y la diferencia que hace el haberlos incluido"
       },
+      "banioNegro" : {
+        "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fbaniadera%20piso%20negro.jpg?alt=media&token=670bda28-d5fb-4223-a349-d0108f7e647a" ],
+        "name" : "Cocina de Maurito",
+        "products" : [ "solid", "3D" ],
+        "text" : "Ojala algun dia nos saliera hacer este color. O mejor aun, que sea real que una obra asi es nuestra"
+      },
       "bar" : {
         "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fdamero.jpg?alt=media&token=d5750057-214f-4514-8b3b-393088991619" ],
         "name" : "Bar de Maurito",
         "products" : [ "solid", "3D" ],
         "text" : "Pero que fantastico queda ese damero. Fantasia, diria mi viejo. Lo hacemos hace 40 años. Lo que pasa es que le pones la mesita esa al lado, con el cartel pelotudo y parece distinto"
-      },
-      "patio" : {
-        "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fexterior.jpg?alt=media&token=c44051ee-dfea-49bf-b7af-18fa640d0f47" ],
-        "name" : "Patio de Maurito",
-        "products" : [ "solid", "3D" ],
-        "text" : "Me pregunto si esta cosa sera una ceramica o un porcelanato. En tal caso estariamos vendiendo gato por liebre. Bueno, esto hasta que hagamos nuestras propias fotos"
-      },
-      "cuarto" : {
-        "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcuarto.jpg?alt=media&token=a14ac797-7f90-4558-9779-78156b9ce816" ],
-        "name" : "Cuarto de Maurito",
-        "products" : [ "solid", "3D" ],
-        "text" : "Ya se me acabaron las estupices para escribir"
       },
       "cocina" : {
         "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcocina%20terrazzo.jpg?alt=media&token=98aa4092-451e-4fd4-87df-b9ae3bf90176" ],
@@ -157,16 +188,35 @@
         "products" : [ "solid", "3D" ],
         "text" : "Lastima que es un vinilo ¿no?"
       },
-      "banioNegro" : {
-        "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fbaniadera%20piso%20negro.jpg?alt=media&token=670bda28-d5fb-4223-a349-d0108f7e647a" ],
-        "name" : "Cocina de Maurito",
+      "cuarto" : {
+        "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcuarto.jpg?alt=media&token=a14ac797-7f90-4558-9779-78156b9ce816" ],
+        "name" : "Cuarto de Maurito",
         "products" : [ "solid", "3D" ],
-        "text" : "Ojala algun dia nos saliera hacer este color. O mejor aun, que sea real que una obra asi es nuestra"
+        "text" : "Ya se me acabaron las estupices para escribir"
+      },
+      "patio" : {
+        "imgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fexterior.jpg?alt=media&token=c44051ee-dfea-49bf-b7af-18fa640d0f47" ],
+        "name" : "Patio de Maurito",
+        "products" : [ "solid", "3D" ],
+        "text" : "Me pregunto si esta cosa sera una ceramica o un porcelanato. En tal caso estariamos vendiendo gato por liebre. Bueno, esto hasta que hagamos nuestras propias fotos"
       }
     }
   },
   "landing" : {
-    "carrImgs" : [ "fantasiaAnteojos", "extRio1", "grisCuarto", "chiampoLiving" ]
+    "carrImgs" : [ "fantasiaAnteojos", "extRio1", "grisCuarto", "chiampoLiving" ],
+    "slides" : [ {
+      "img" : "fantasiaAnteojos",
+      "subTitle" : "",
+      "title" : "Pisos y revestimientos singulares"
+    }, {
+      "img" : "grisCuarto",
+      "subTitle" : "",
+      "title" : "Pisos y revestimientos singulares"
+    }, {
+      "img" : "chiampoLiving",
+      "subTitle" : "",
+      "title" : "Pisos y revestimientos singulares"
+    } ]
   },
   "logos" : {
     "pisoInteriorBlanco" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FmesaBlanco.png?alt=media&token=82c43109-90c9-4f95-abcc-85610b86aaa5",
@@ -177,6 +227,7 @@
     "collections" : {
       "3d" : {
         "applications" : [ "revestimientos" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioVainillas.JPG?alt=media&token=fa01c32a-ce20-491e-92bc-ce68c45902a9",
         "models" : {
           "16P" : {
             "colors" : [ "blanco", "rosa", "verde-alpe" ],
@@ -208,133 +259,152 @@
         },
         "name" : "3D",
         "order" : 5,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses"
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioVainillas.JPG?alt=media&token=fa01c32a-ce20-491e-92bc-ce68c45902a9",
+        "text" : "Encuentra movimiento, luces y sombras. Colecciones en 3 dimensiones, revestimientos que roban miradas"
       },
       "brick" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
+        "applications" : [ "revestimientos" ],
         "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
         "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FladrilloNegro.jpg?alt=media&token=bc5d1cb8-1f4b-4e18-afaa-dc96e3edee1e",
         "name" : "BRIC",
         "order" : 7,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses"
-      },
-      "calcareos" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
-        "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
-        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
-        "name" : "Calcareos",
-        "order" : 2,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
-        "thickness" : "20 mm"
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FladrilloNegro.jpg?alt=media&token=bc5d1cb8-1f4b-4e18-afaa-dc96e3edee1e",
+        "text" : "Estilo subway + detalles de color y terminación que aporta el terrazzo"
       },
       "classic" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
-        "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
-        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
+        "applications" : [ "pisosInt", "mesas" ],
+        "colors" : [ "blanco", "botichino", "sierraChica", "brechiato", "napoleon", "verde-alpe" ],
+        "dim" : [ "20x20", "40x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FclasicoNegro.jpg?alt=media&token=847af8fa-cef2-4c1e-8832-93fa5add5e79",
         "name" : "Clasica",
         "order" : 0,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
-        "thickness" : "20 mm"
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fliving.jpg?alt=media&token=2d3afb6d-c8bc-4e8e-bad2-8b34ad50016c",
+        "text" : "Nuestra linea clasica de mosaicos. Pre-pulidos de fabrica y con 32 mm de espesor. Luego del pulido final en obra, obtendras una  superficie lisa, con juntas imperceptibles y sin imperfecciones",
+        "thickness" : "32 mm"
       },
       "glass" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
+        "applications" : [ "pisosInt", "revestimientos", "mesas" ],
         "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
-        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
+        "dim" : [ "40x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fvitro.jpg?alt=media&token=c9524deb-6470-45d4-91de-56a1f0cd7ec6",
         "name" : "Vitro",
         "order" : 1,
         "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
+        "text" : "Compuesta principalmente por granulado de vidrio reciclado seleccionado. Tonos plenos y una sensación de profundidad singular. Encuentra un juego especial con la luz, siempre diferente según el momento",
         "thickness" : "20 mm"
       },
       "losetas" : {
         "applications" : [ "pisosExt" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FextRio2.jpg?alt=media&token=294121ac-4e4c-4969-8b25-3fd9a8026d1e",
         "models" : {
+          "6040" : {
+            "colors" : [ "blanco", "brechiato", "verde-alpe" ],
+            "dim" : [ "20x60", "60x40" ],
+            "name" : "Rettangolo",
+            "order" : 4,
+            "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FextRio2.jpg?alt=media&token=294121ac-4e4c-4969-8b25-3fd9a8026d1e",
+            "text" : "Combina colores y dimensiones para obtener terminaciones realmente distintas",
+            "thickness" : "35 mm"
+          },
           "16P" : {
-            "colors" : [ "blanco", "rosa", "verde-alpe" ],
+            "colors" : [ "blanco", "brechiato", "verde-alpe" ],
             "dim" : [ "40x40" ],
             "name" : "16 panes",
             "order" : 1,
             "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-            "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
+            "text" : "Combina altas prestaciones de resistencia al desgaste con gran capacidad antideslizante. Una terminación fina con una espectacular sensación de continuidad",
             "thickness" : "35 mm"
           },
           "64P" : {
-            "colors" : [ "blanco", "rosa", "verde-alpe" ],
+            "colors" : [ "blanco", "brechiato", "verde-alpe", "sierraChica" ],
             "dim" : [ "40x40" ],
             "name" : "64 panes",
             "order" : 0,
             "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-            "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
+            "text" : "Modelo clasico, que decora todas las veredas de Buenos Aires. Combina altas prestaciones de resistencia al desgaste con gran capacidad antideslizante. Una terminación fina con una espectacular sensación de continuidad",
             "thickness" : "35 mm"
           },
           "8V" : {
-            "colors" : [ "blanco", "rosa", "verde-alpe" ],
+            "colors" : [ "blanco", "brechiato", "verde-alpe" ],
             "dim" : [ "40x40" ],
             "name" : "8 vainillas",
             "order" : 2,
             "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-            "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
+            "text" : "Una terminación sobria, esbelta y elegante. De facil mantenimiento y alta resistencia al desgaste. ",
             "thickness" : "35 mm"
           }
         },
         "name" : "Losetas",
         "order" : 4,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses"
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FextRio2.jpg?alt=media&token=294121ac-4e4c-4969-8b25-3fd9a8026d1e",
+        "text" : "Pulidas, con distintos relieves o lisas, terminaciones sofisticadas y elegantes para exteriores. De gran resistencia al desgaste, una solución ideal para recibir alto transito. Función y forma en perfecto equilibrio"
       },
       "quarzo" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
+        "applications" : [ "pisosInt", "mesas" ],
         "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
-        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
+        "featureImgs" : [ "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FcocinaBlanca.jpg?alt=media&token=5b6392aa-bfcf-4068-895f-45f90ef7caae", "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FcocinaGrisPlomo.jpg?alt=media&token=b59724e3-f5bf-4a4b-9c93-05768700446f", "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FcocinaVerde.jpg?alt=media&token=975bfa44-17ab-467e-9c28-2c25c64e9b43" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fquarzo1.jpg?alt=media&token=1053ccd1-67ee-4067-8640-defc1c5b2549",
         "name" : "Quarzo",
         "order" : 9,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
-        "thickness" : "20 mm"
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fquarzo1.jpg?alt=media&token=1053ccd1-67ee-4067-8640-defc1c5b2549",
+        "text" : "El color que quieras, sin juntas. Aplicado in-situ. Nuestro producto mas versátil, funcional y espectacular ",
+        "thickness" : "9 mm"
       },
       "rusticato" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
-        "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
-        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
+        "applications" : [ "pisosExt" ],
+        "colors" : [ "arena", "plata", "grafito" ],
+        "dim" : [ "40x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FTOM.jpeg?alt=media&token=4570837e-18d3-4af2-8eb7-e1b9cddc97d8",
         "name" : "Rusticato",
         "order" : 6,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
-        "thickness" : "20 mm"
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FTOM.jpeg?alt=media&token=4570837e-18d3-4af2-8eb7-e1b9cddc97d8",
+        "text" : "Colores inspirados en la naturleza con sutiles tonos madera y piedra. Una terminacion rustica ideal para exteriores",
+        "thickness" : "32 mm"
       },
       "solid" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
+        "applications" : [ "pisosInt", "revestimientos", "mesas" ],
         "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
-        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
+        "dim" : [ "40x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbotellasSobNegro.jpg?alt=media&token=be6b5702-1980-4a4a-87ab-43f5db845e7d",
         "name" : "Solido",
         "order" : 8,
         "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
+        "text" : "De agregados finos, tonos suaves y gentiles. Para quienes buscan un tono solido, unificado",
         "thickness" : "20 mm"
       },
       "vaca" : {
-        "applications" : [ "pisosInt", "pisosExt", "mesas", "revestimientos" ],
-        "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
-        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
-        "name" : "Vaca Loca",
+        "applications" : [ "pisosInt", "revestimientos", "mesas" ],
+        "colors" : [ "vaca-marciana", "dzek" ],
+        "dim" : [ "40x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbigMarble.jpg?alt=media&token=4753990d-f242-4cea-929f-57de2ca49e65",
+        "name" : "BIG",
         "order" : 3,
-        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-        "text" : "Revestimientos con personalidad. Se distinto, creete copado. La realidad es que seguramente seas un pelotudo infeliz que no tiene nada mejor para hacer con su plata que gastarla en estas boludeses",
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbigMarble.jpg?alt=media&token=4753990d-f242-4cea-929f-57de2ca49e65",
+        "text" : "Fuera de lo normal es la norma de esta linea. Quizas un detalle para aportar originalidad, quizas el motivo dominante de tu ambiente. Espectacular contraste de agregados de gran tamaño hacen de esta linea la mas especial y atrevida.",
         "thickness" : "20 mm"
       }
     },
     "featured" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbotellasSobNegro.jpg?alt=media&token=be6b5702-1980-4a4a-87ab-43f5db845e7d"
   },
   "projectImgs" : {
+    "bigMarbe" : {
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbigMarble.jpg?alt=media&token=4753990d-f242-4cea-929f-57de2ca49e65"
+    },
+    "cementoCeleste" : {
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FcementoCeleste.jpg?alt=media&token=fa8a7c83-0782-4e11-9444-8226982abbc8"
+    },
+    "cementoNegro" : {
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FcementoNegro.jpg?alt=media&token=1bc062a5-546a-434d-b07a-eb54105093db"
+    },
     "cepoBanio" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432"
     },
     "chiampoLiving" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FTerrazzo-Levantina.jpg?alt=media&token=f66c6ecc-0779-4f3b-8e43-90b84f778e91"
+    },
+    "clasicoNegro" : {
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FclasicoNegro.jpg?alt=media&token=847af8fa-cef2-4c1e-8832-93fa5add5e79"
     },
     "dameroBar" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcuarto.jpg?alt=media&token=a14ac797-7f90-4558-9779-78156b9ce816"
@@ -375,6 +445,9 @@
     "hexa3D" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FBanio.jpg?alt=media&token=718e0cd8-bf98-4369-a575-49fceb414550"
     },
+    "ladrilloNegro" : {
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FladrilloNegro.jpg?alt=media&token=bc5d1cb8-1f4b-4e18-afaa-dc96e3edee1e"
+    },
     "mesaDetalle" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FdetalleMesa.jpg?alt=media&token=0372af7c-be6b-49a3-832c-8c96e4ea6351"
     },
@@ -399,11 +472,69 @@
     "patrones2" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fpatrones2.JPG?alt=media&token=51ddca61-65b2-4701-835c-8e8250610885"
     },
+    "quarzo1" : {
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fquarzo1.jpg?alt=media&token=1053ccd1-67ee-4067-8640-defc1c5b2549"
+    },
+    "quarzo2" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fquarzo2.jpg?alt=media&token=4f6ee3b6-2834-42a1-890c-f6a8625401e9",
     "revRayas1" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Frayas.jpg?alt=media&token=a302530d-33c0-4eda-9f77-fd367c987dee"
     },
     "revRayas2" : {
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Frayas2.jpg?alt=media&token=ed51373b-e87a-4944-84e0-407657f11f17"
+    },
+    "tom" : {
+      "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FTOM.jpeg?alt=media&token=4570837e-18d3-4af2-8eb7-e1b9cddc97d8"
+    }
+  },
+  "queries" : {
+    "-LNvPm1xCJHHgrYecKSd" : {
+      "email" : "alejandroquadri@quadri.com.ar",
+      "name" : "Alejandro Quadri",
+      "query" : "hola",
+      "telephone" : "0111551612850"
+    },
+    "-LNvQ4MUUp3HJrliKwAF" : {
+      "email" : "alejandroquadri@quadri.com.ar",
+      "interest" : "Losetas",
+      "name" : "Alejandro Quadri",
+      "query" : "interesado",
+      "telephone" : "0111551612850"
+    },
+    "-LNvQSdGYFxk9IwSMSIn" : {
+      "email" : "alejandroquadri@quadri.com.ar",
+      "interest" : "64 panes",
+      "name" : "Alejandro Quadri",
+      "query" : "precios? botichino",
+      "telephone" : "0111551612850"
+    },
+    "-LNvXD0HORSuEzbFEfe2" : {
+      "email" : "alejandroquadri@quadri.com.ar",
+      "name" : "0111551612850",
+      "query" : "pepe",
+      "telephone" : ""
+    },
+    "-LNv_luG0OCKI-kcJnMT" : {
+      "email" : "alejandroquadri@quadri.com.ar",
+      "name" : "Alejandro Quadri",
+      "query" : "Prueba final"
+    },
+    "-LNva4EwOzXBzFU1ksFV" : {
+      "email" : "pepe@quadri.com.ar",
+      "name" : "Alejandro Quadri",
+      "query" : "Hola loco!",
+      "telephone" : ""
+    },
+    "-LNvbrfUfjhDu4wVaXJ5" : {
+      "email" : "alejandroquadri@quadri.com.ar",
+      "interest" : "Clasica",
+      "name" : "Alejandro Quadri",
+      "query" : "prueba desde el api real",
+      "telephone" : "0111551612850"
+    },
+    "-LO4zWBui0gRjDNKgnX6" : {
+      "email" : "alejandroquadri@gmail.com",
+      "name" : "Ale",
+      "query" : "Quiero saber de mosaicos"
     }
   }
 }
