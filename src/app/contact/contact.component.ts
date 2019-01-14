@@ -11,6 +11,7 @@ import { Validators, FormGroup, FormArray, FormBuilder } from '@angular/forms';
 
 import { faMapMarker, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { ContactService } from './../shared/services/contact.service';
+import { SeoService, StaticService } from '../shared';
 
 @Component({
   selector: 'app-contact',
@@ -49,6 +50,8 @@ export class ContactComponent implements OnInit {
     private contactData: ContactService,
     private fb: FormBuilder,
     private renderer: Renderer,
+    private seoService: SeoService,
+    private staticService: StaticService,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     // esto es porque el componente de mapa usa la window y al renderizar para servidor
@@ -62,6 +65,14 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
+    const metaTags = {
+      title: 'Contacto | Quadri',
+      description: 'Pisos y revestimientos únicos con terrazzo. Contactanos al +54 11 4861 0450',
+      image: this.staticService.logo,
+      slug: '/contacto',
+    };
+
+    this.seoService.generateTags(metaTags);
     this.buildForm();
   }
 

@@ -5,7 +5,9 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
 -->
 
 <div  *ngIf="carrousel"  class="carousel-wrapper d-flex">
-  <ngb-carousel [interval]="0"  [showNavigationArrows]="navArrows" [showNavigationIndicators]="navIndicators" (slide)="cambio($event)">
+  <ngb-carousel [interval]="0" 
+  [showNavigationArrows]="slidesArray.lenght > 1" [showNavigationIndicators]="slidesArray.lenght > 1"
+  (slide)="cambio($event)">
   
     <ng-template ngbSlide *ngFor="let slide of slidesArray" >
 
@@ -34,9 +36,9 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
 </div>
 
 <!-- esto de abajo es un truquito para que se carguen las imagenes rapido -->
-<div style="display:none;">
+<!-- <div style="display:none;">
   <img alt="" *ngFor="let img of slidesArray" style="display:none;" [src]="images[slidesData[img].img].url">
-</div>
+</div> -->
 
 <!-- El div de abajo sirve en caso de querer usar de una imagen f.urlull screen -->
 <div *ngIf="!carrousel"  class="carousel-wrapper d-flex">

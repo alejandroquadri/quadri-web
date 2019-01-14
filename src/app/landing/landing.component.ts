@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, Inject, ElementRef } from '@angular/core'
 import { DOCUMENT } from '@angular/common';
 import { Router } from '@angular/router';
 
-import { StaticService } from '../shared';
+import { StaticService, SeoService } from '../shared';
 
 @Component({
   selector: 'app-landing',
@@ -22,8 +22,6 @@ export class LandingComponent implements OnInit {
 
   slidesData: any;
   slidesArray: Array<any>;
-  navIndicators = false;
-  navArrows: boolean;
 
   // @ViewChild('slide1') slide1;
   @ViewChild('terrazzo') terrazzo: ElementRef;
@@ -31,6 +29,7 @@ export class LandingComponent implements OnInit {
   constructor(
     private staticData: StaticService,
     public router: Router,
+    private seoService: SeoService,
     @Inject(DOCUMENT) document
   ) {
     this.doc = document;
@@ -39,10 +38,19 @@ export class LandingComponent implements OnInit {
 
     this.slidesData = this.staticData.data.landing.slides;
     this.slidesArray = Object.keys(this.slidesData);
-    this.slidesArray.length > 1 ? this.navArrows = true : this.navArrows = false ;
   }
 
   ngOnInit() {
+
+    const metaTags = {
+      title: 'Pisos y revestimientos de terrazzo | Quadri',
+      // tslint:disable-next-line:max-line-length
+      description: 'En Quadri diseñamos y fabricamos desde 1861 pisos y revestimientos únicos con terrazzo para las mas variadas aplicaciones de diseño y arquitectura.',
+      image: this.slidesData[0].img,
+      slug: '',
+    };
+
+    this.seoService.generateTags(metaTags);
 
     // !! el codigo de abajo sirve para cambiar el css para que el carousel quede fullscreen
     if (this.carrousel) {

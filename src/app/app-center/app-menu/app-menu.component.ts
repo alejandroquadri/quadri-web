@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, ViewChild, ElementRef, HostListener, Renderer2 } from '@angular/core';
-import { StaticService } from '../../shared';
+import { StaticService, SeoService } from '../../shared';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -24,13 +24,23 @@ export class AppMenuComponent implements OnInit {
   constructor(
     public staticData: StaticService,
     private router: Router,
-    private renderer: Renderer2
+    // private renderer: Renderer2,
+    private seoService: SeoService
   ) {
     this.data = this.staticData.data;
     this.appMenu = this.staticData.data.appMenu;
   }
 
   ngOnInit() {
+    const metaTags = {
+      title: 'Aplicaciones de nuestros productos | Quadri',
+      // tslint:disable-next-line:max-line-length
+      description: 'Conoce todas las posibles aplicaciones de nuestros productos en tus proyectos',
+      image: this.appMenu.pisosExt.img,
+      slug: '/aplicaciones',
+    };
+
+    this.seoService.generateTags(metaTags);
   }
 
   goTo(path: string) {

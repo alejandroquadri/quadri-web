@@ -1,6 +1,6 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { StaticService } from '../../shared';
+import { StaticService, SeoService } from '../../shared';
 
 @Component({
   selector: 'app-product-detail',
@@ -16,13 +16,23 @@ export class ProductDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private staticData: StaticService
+    private staticData: StaticService,
+    private seoService: SeoService
   ) { }
 
   ngOnInit() {
     this.prod = this.route.snapshot.paramMap.getAll('id')[0];
     this.model = this.route.snapshot.paramMap.getAll('prod')[0];
     this.modelData = this.staticData.data.products.collections[this.prod].models[this.model];
+
+    const metaTags = {
+      title: `${this.modelData.name} | Quadri`,
+      description: this.modelData.text,
+      image: this.modelData.presentacion,
+      slug: `/productos/${this.prod}/${this.modelData}`,
+    };
+
+    this.seoService.generateTags(metaTags);
   }
 
 }

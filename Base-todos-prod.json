@@ -29,7 +29,7 @@
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FmesaBlanco.png?alt=media&token=4356b2c5-b62d-4335-9ce4-a504ec96fd4d",
       "iconBlack" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FmesaNegro.png?alt=media&token=0526a772-1742-4684-ae42-b90b78bd6a7a",
       "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fvaca-web.jpeg?alt=media&token=58c63a09-6386-42fb-a84b-f0652bc74af9",
-      "products" : [ "big", "vitro", "solid" ],
+      "products" : [ "vaca", "glass", "solid" ],
       "texto" : "El terrazzo es un material versatil y en plena tendencia. Ademas es totalmente customizable, convertira tus mesas en un elemento de singular destaque y originalidad",
       "titulo" : "Mesas y barras"
     },
@@ -45,7 +45,7 @@
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FparedIntBlanco.png?alt=media&token=ccffd480-9897-4138-bbab-a37cbad30fa6",
       "iconBlack" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FpisoIntNegro.png?alt=media&token=98ecdf99-6ace-4a35-b94b-24ad67d5b02e",
       "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcuarto.jpg?alt=media&token=a14ac797-7f90-4558-9779-78156b9ce816",
-      "products" : [ "classic", "vitro", "solid", "big", "quarzo" ],
+      "products" : [ "classic", "glass", "solid", "vaca", "quarzo" ],
       "texto" : "Resistente al paso del tiempo. Desde tonos sobrios y suaves a terminaciones singulares y llamativas",
       "titulo" : "Pisos Interiores"
     },
@@ -53,7 +53,7 @@
       "icon" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FparedExtBlanco.png?alt=media&token=b73166fe-e68c-4ee8-a108-64d0b90f56ec",
       "iconBlack" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2FparedExtNegro.png?alt=media&token=71433fca-a3d3-4077-b45d-398b316cad87",
       "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2Fcocina.jpg?alt=media&token=ec71ebc7-5ca4-489f-8963-18434f1be485",
-      "products" : [ "brick", "3d", "vitro", "big", "solid" ],
+      "products" : [ "brick", "3d", "glass", "vaca", "solid" ],
       "texto" : "Luces y sombras. Diferentes formas. Distintas texturas. Variados colores. Desata tu creatividad!",
       "titulo" : "Revestimientos"
     }
@@ -140,10 +140,10 @@
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2F20x20.png?alt=media&token=7de56e3c-8bfc-47cd-9564-cee7a03f4bb8",
       "width" : 67
     },
-    "13x60" : {
-      "name" : "1300 x 600",
+    "20x60" : {
+      "name" : "200 x 600",
       "url" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Flogos%2F60x20.png?alt=media&token=47da325a-3db6-48bc-9609-3a1b90b48017",
-      "width" : 130
+      "width" : 200
     },
     "40x40" : {
       "name" : "400 x 400",
@@ -262,6 +262,16 @@
         "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioVainillas.JPG?alt=media&token=fa01c32a-ce20-491e-92bc-ce68c45902a9",
         "text" : "Encuentra movimiento, luces y sombras. Colecciones en 3 dimensiones, revestimientos que roban miradas"
       },
+      "brick" : {
+        "applications" : [ "revestimientos" ],
+        "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
+        "dim" : [ "20x20", "20x60", "40x40", "50x50", "60x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FladrilloNegro.jpg?alt=media&token=bc5d1cb8-1f4b-4e18-afaa-dc96e3edee1e",
+        "name" : "BRIC",
+        "order" : 7,
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FladrilloNegro.jpg?alt=media&token=bc5d1cb8-1f4b-4e18-afaa-dc96e3edee1e",
+        "text" : "Estilo subway + detalles de color y terminación que aporta el terrazzo"
+      },
       "classic" : {
         "applications" : [ "pisosInt", "mesas" ],
         "colors" : [ "blanco", "botichino", "sierraChica", "brechiato", "napoleon", "verde-alpe" ],
@@ -273,7 +283,7 @@
         "text" : "Nuestra linea clasica de mosaicos. Pre-pulidos de fabrica y con 32 mm de espesor. Luego del pulido final en obra, obtendras una  superficie lisa, con juntas imperceptibles y sin imperfecciones",
         "thickness" : "32 mm"
       },
-      "vitro" : {
+      "glass" : {
         "applications" : [ "pisosInt", "revestimientos", "mesas" ],
         "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
         "dim" : [ "40x40" ],
@@ -290,17 +300,8 @@
         "models" : {
           "6040" : {
             "colors" : [ "blanco", "brechiato", "verde-alpe" ],
-            "dim" : ["60x40" ],
-            "name" : "6040",
-            "order" : 3,
-            "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FextRio2.jpg?alt=media&token=294121ac-4e4c-4969-8b25-3fd9a8026d1e",
-            "text" : "Combina colores y dimensiones para obtener terminaciones realmente distintas",
-            "thickness" : "35 mm"
-          },
-          "6013" : {
-            "colors" : [ "blanco", "brechiato", "verde-alpe" ],
-            "dim" : [ "13x60" ],
-            "name" : "6013",
+            "dim" : [ "20x60", "60x40" ],
+            "name" : "Rettangolo",
             "order" : 4,
             "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FextRio2.jpg?alt=media&token=294121ac-4e4c-4969-8b25-3fd9a8026d1e",
             "text" : "Combina colores y dimensiones para obtener terminaciones realmente distintas",
@@ -313,7 +314,7 @@
             "order" : 1,
             "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
             "text" : "Combina altas prestaciones de resistencia al desgaste con gran capacidad antideslizante. Una terminación fina con una espectacular sensación de continuidad",
-            "thickness" : "32 mm"
+            "thickness" : "35 mm"
           },
           "64P" : {
             "colors" : [ "blanco", "brechiato", "verde-alpe", "sierraChica" ],
@@ -322,7 +323,7 @@
             "order" : 0,
             "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
             "text" : "Modelo clasico, que decora todas las veredas de Buenos Aires. Combina altas prestaciones de resistencia al desgaste con gran capacidad antideslizante. Una terminación fina con una espectacular sensación de continuidad",
-            "thickness" : "32 mm"
+            "thickness" : "35 mm"
           },
           "8V" : {
             "colors" : [ "blanco", "brechiato", "verde-alpe" ],
@@ -332,15 +333,6 @@
             "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
             "text" : "Una terminación sobria, esbelta y elegante. De facil mantenimiento y alta resistencia al desgaste. ",
             "thickness" : "35 mm"
-          },
-          "piletas" : {
-            "colors" : [ "blanco", "brechiato", "verde-alpe" ],
-            "dim" : [ "50x50" ],
-            "name" : "Piletas",
-            "order" : 2,
-            "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
-            "text" : "Atérmicas y antideslizantes, ideales para piscinas, solárium y superficies expuestas a altas temperaturas ",
-            "thickness" : "20 mm"
           }
         },
         "name" : "Losetas",
@@ -370,7 +362,18 @@
         "text" : "Colores inspirados en la naturleza con sutiles tonos madera y piedra. Una terminacion rustica ideal para exteriores",
         "thickness" : "32 mm"
       },
-      "big" : {
+      "solid" : {
+        "applications" : [ "pisosInt", "revestimientos", "mesas" ],
+        "colors" : [ "blanco", "dzek", "vaca-marciana", "rosa", "verde-alpe" ],
+        "dim" : [ "40x40" ],
+        "menu" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbotellasSobNegro.jpg?alt=media&token=be6b5702-1980-4a4a-87ab-43f5db845e7d",
+        "name" : "Solido",
+        "order" : 8,
+        "presentacion" : "https://firebasestorage.googleapis.com/v0/b/designweb-249da.appspot.com/o/quadri%2Fambientes%2FbanioCepo.jpg?alt=media&token=353c2bf9-8ef3-4bd3-b243-fcadf5812432",
+        "text" : "De agregados finos, tonos suaves y gentiles. Para quienes buscan un tono solido, unificado",
+        "thickness" : "20 mm"
+      },
+      "vaca" : {
         "applications" : [ "pisosInt", "revestimientos", "mesas" ],
         "colors" : [ "vaca-marciana", "dzek" ],
         "dim" : [ "40x40" ],

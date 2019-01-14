@@ -1,6 +1,6 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { StaticService } from '../../shared';
+import { StaticService, SeoService } from '../../shared';
 
 @Component({
   selector: 'app-product',
@@ -16,7 +16,8 @@ export class ProductComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private staticData: StaticService
+    private staticData: StaticService,
+    private seoService: SeoService
   ) { }
 
   ngOnInit() {
@@ -25,6 +26,14 @@ export class ProductComponent implements OnInit {
     if (this.product.models) {
       this.models = Object.keys(this.product.models);
     }
+    const metaTags = {
+      title: `${this.product.name} | Quadri`,
+      description: this.product.text,
+      image: this.product.presentacion,
+      slug: `/productos/${this.id}`,
+    };
+
+    this.seoService.generateTags(metaTags);
   }
 
   routeTo(model) {

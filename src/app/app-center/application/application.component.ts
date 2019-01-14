@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { componentFactoryName } from '../../../../node_modules/@angular/compiler';
-import { StaticService } from '../../shared';
+import { StaticService, SeoService } from '../../shared';
 
 @Component({
   selector: 'app-application',
@@ -18,7 +18,8 @@ export class ApplicationComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private staticData: StaticService
+    private staticData: StaticService,
+    private seoService: SeoService
   ) { }
 
   ngOnInit() {
@@ -37,6 +38,16 @@ export class ApplicationComponent implements OnInit {
     this.id = this.whichApp(this.route.snapshot.paramMap.getAll('id')[0]);
     this.application = this.staticData.data.apps[this.id];
     this.products = this.staticData.data.products.collections;
+
+    const metaTags = {
+      title: `${ this.application.titulo } | Quadri`,
+      // tslint:disable-next-line:max-line-length
+      description: this.application.texto,
+      image: this.application.presentacion,
+      slug: `/aplicaciones/${this.id}`,
+    };
+
+    this.seoService.generateTags(metaTags);
   }
 
   routeTo(prod) {
