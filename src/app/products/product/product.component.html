@@ -13,11 +13,26 @@
 <div *ngIf="models"  class="jumbotron jumbotron-fluid mb-0 bg-white">
   <div class="container">
     <div class="d-flex model-container">
+
       <div *ngFor="let model of models" class="model" (click)="routeTo(model)">
-        <div class="background"></div>
-        <div class="text-wrapper d-flex align-items-center">
+        <!-- <div>model</div> -->
+        <!-- spinner -->
+        <div class="spinner-wrapper d-flex align-items-center">
+          <div class="text-center w-100 spinner">
+            <fa-icon class="icons p-3" [icon]="spinner" [spin]="true"></fa-icon>
+          </div>
+        </div>
+        <!--esconde el spinner una vez que se carga la imagen -->
+        <img [src]="product.models[model].menuImg" [hidden]="true" (load)="lineText.className = 'text-wrapper d-flex align-items-center show-text'">
+        <!-- imagen dentro del div -->
+        <div class="background"
+        [ngStyle]="{'background-image': 'url(' + product.models[model].menuImg + ')'}">
+        </div>
+        <!-- texto -->
+        <div #lineText class="text-wrapper d-flex align-items-center">
           <div class="text-center w-100 prod-name"> {{ product.models[model].name }} </div>
         </div>
+        
       </div>
     </div>
   </div>

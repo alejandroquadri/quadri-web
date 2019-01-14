@@ -2,6 +2,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { StaticService, SeoService } from '../../shared';
 
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -12,6 +14,8 @@ export class ProductComponent implements OnInit {
   id: any;
   product: any;
   models: Array<any>;
+
+  spinner = faSpinner;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,15 +29,14 @@ export class ProductComponent implements OnInit {
     this.product = this.staticData.data.products.collections[this.id];
     if (this.product.models) {
       this.models = Object.keys(this.product.models);
+      const metaTags = {
+        title: `${this.product.name} | Quadri`,
+        description: this.product.text,
+        image: this.product.presentacion,
+        slug: `/productos/${this.id}`,
+      };
+      this.seoService.generateTags(metaTags);
     }
-    const metaTags = {
-      title: `${this.product.name} | Quadri`,
-      description: this.product.text,
-      image: this.product.presentacion,
-      slug: `/productos/${this.id}`,
-    };
-
-    this.seoService.generateTags(metaTags);
   }
 
   routeTo(model) {

@@ -12,7 +12,8 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
     <ng-template ngbSlide *ngFor="let slide of slidesArray" >
 
       <div class="carousel-caption">
-        <div class="custom" [ngStyle]="{'background-image': 'url(' + images[slidesData[slide].img].url + ')'}"></div>
+        <div class="custom desktop" [ngStyle]="{'background-image': 'url(' + images[slidesData[slide].img].url + ')'}"></div>
+        <div class="custom mobile" [ngStyle]="{'background-image': 'url(' + images[slidesData[slide].img].urlMobile + ')'}"></div>
         <div class="caption-wrapper d-flex flex-column justify-content-center jumbotron bg-transparent m-0">
           <div class="text-wrapper">
             <div class="oneliner">{{ slidesData[slide].title }}</div>
