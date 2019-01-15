@@ -52,8 +52,8 @@ export class QueryComponent implements OnInit {
     const query = this.myForm.value;
     if (this.data) { query['interest'] = this.datos; }
 
-    this.contactData.sendQuery(query)
-    .subscribe( () => console.log('email sent'));
+    // this.contactData.sendQuery(query)
+    // .subscribe( () => console.log('email sent'));
 
     this.contactData.saveQuery(query)
     .then( () => console.log('query saved'));

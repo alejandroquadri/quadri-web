@@ -11,24 +11,26 @@
   <div class="container">
     <div class="d-flex product-container">
 
-      <div *ngFor="let prod of (products | toArray)| sort:'order':true:false" class="prod" (click)="routeTo(prod.$key)">
-        <!-- spinner -->
-        <div class="spinner-wrapper d-flex align-items-center">
-          <div class="text-center w-100 spinner">
-            <fa-icon class="icons p-3" [icon]="spinner" [spin]="true"></fa-icon>
+      <div *ngFor="let prod of (products | toArray)| sort:'order':true:false"  (click)="routeTo(prod.$key)">
+        <div *ngIf="prod.show" class="prod">
+          <!-- spinner -->
+          <div class="spinner-wrapper d-flex align-items-center">
+            <div class="text-center w-100 spinner">
+              <fa-icon class="icons p-3" [icon]="spinner" [spin]="true"></fa-icon>
+            </div>
+          </div>
+          <!--esconde el spinner una vez que se carga la imagen -->
+          <img [src]="prod.menu" [hidden]="true" (load)="lineText.className = 'text-wrapper d-flex align-items-center show-text'">
+          <!-- imagen dentro del div -->
+          <div class="background" 
+          [ngStyle]="{'background-image': 'url(' + prod.menu + ')'}"></div>
+          <!-- texto -->
+          <div #lineText class="text-wrapper d-flex align-items-center">
+            <div class="text-center w-100 prod-name"> {{ prod.name }} </div>
           </div>
         </div>
-        <!--esconde el spinner una vez que se carga la imagen -->
-        <img [src]="prod.menu" [hidden]="true" (load)="lineText.className = 'text-wrapper d-flex align-items-center show-text'">
-        <!-- imagen dentro del div -->
-        <div class="background" 
-        [ngStyle]="{'background-image': 'url(' + prod.menu + ')'}"></div>
-        <!-- texto -->
-        <div #lineText class="text-wrapper d-flex align-items-center">
-          <div class="text-center w-100 prod-name"> {{ prod.name }} </div>
-        </div>
       </div>
-      
+
     </div>
   </div>
 </div>
