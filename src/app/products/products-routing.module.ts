@@ -16,10 +16,6 @@ const routes: Routes = [
     component: QuarzoComponent
   },
   {
-    path: 'mosaicos',
-    component: ProductComponent
-  },
-  {
     path: ':id',
     component: ProductComponent
   },
