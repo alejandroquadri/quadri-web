@@ -24,6 +24,7 @@ const ROUTES = [
   '/aplicaciones/mesas',
   '/productos',
   '/productos/classic',
+  '/productos/mosaicos',
   '/productos/vitro',
   '/productos/big',
   '/productos/losetas',
@@ -37,7 +38,8 @@ const ROUTES = [
   '/productos/quarzo',
   '/productos/rusticato',
   '/contacto',
-  '/nosotros'
+  '/nosotros',
+  '/la-empresa'
 ];
 
 const APP_NAME = 'quadri-web';
