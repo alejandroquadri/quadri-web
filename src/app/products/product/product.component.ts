@@ -26,7 +26,12 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.getAll('id');
-    this.product = this.staticData.data.products.collections[this.id];
+    if (this.id.length > 0) {
+      this.product = this.staticData.data.products.collections[this.id];
+    } else if (this.router.url === '/productos/mosaicos') {
+      this.product = this.staticData.data.products.collections.mosaicos;
+    }
+
     if (this.product.models) {
       this.models = Object.keys(this.product.models);
       const metaTags = {

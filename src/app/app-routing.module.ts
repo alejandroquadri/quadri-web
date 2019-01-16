@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'productos', loadChildren: './products/products.module#ProductsModule' },
   { path: 'inspiracion', component: ProjectsComponent },
   { path: 'contacto', component: ContactComponent },
-  { path: 'nosotros', component: AboutComponent }
+  { path: 'nosotros', component: AboutComponent },
+  { path: 'la-empresa', component: AboutComponent }
 ];
 
 @NgModule({
