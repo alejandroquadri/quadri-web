@@ -1,4 +1,4 @@
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { StaticService, SeoService } from '../../shared';
 
@@ -15,20 +15,18 @@ export class ProductDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
     private staticData: StaticService,
     private seoService: SeoService
   ) { }
 
   ngOnInit() {
-    this.prod = this.route.snapshot.paramMap.getAll('id')[0].toLowerCase();
+    this.prod = this.route.snapshot.paramMap.getAll('id')[0];
     this.model = this.route.snapshot.paramMap.getAll('prod')[0];
-
     const prod = this.staticData.data.products.collections[this.prod];
     this.modelData = prod.models[this.model];
 
     const metaTags = {
-      title: `${this.modelData.name} | Quadri`,
+      title: `${ this.modelData.name } | Quadri`,
       description: this.modelData.text,
       image: this.modelData.presentacion,
       slug: `/productos/${this.prod}/${this.modelData}`,
