@@ -42,6 +42,7 @@
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
     "firebase": "^5.2.0",
+    "firebase-tools": "^6.3.0",
     "font-awesome": "^4.7.0",
     "moment": "^2.22.2",
     "npm": "^6.1.0",

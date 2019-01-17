@@ -42,7 +42,10 @@ const ROUTES = [
   '/productos/rusticato',
   '/contacto',
   '/nosotros',
-  '/la-empresa'
+  '/la-empresa',
+  '/enlaces/enlaces-quadri-1.html',
+  '/enlaces/enlaces-quadri-2.html',
+  '/enlaces/enlaces-quadri-3.html'
 ];
 
 const APP_NAME = 'quadri-web';

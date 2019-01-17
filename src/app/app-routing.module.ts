@@ -8,8 +8,18 @@ import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
-  { path: 'aplicaciones', loadChildren: './app-center/app-center.module#AppCenterModule'},
-  { path: 'productos', loadChildren: './products/products.module#ProductsModule' },
+  {
+    path: 'aplicaciones',
+    loadChildren: './app-center/app-center.module#AppCenterModule'
+  },
+  {
+    path: 'productos',
+    loadChildren: './products/products.module#ProductsModule' 
+  },
+  {
+    path: 'enlaces',
+    loadChildren: './enlaces/enlaces.module#EnlacesModule'
+  },
   { path: 'inspiracion', component: ProjectsComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'nosotros', component: AboutComponent },
