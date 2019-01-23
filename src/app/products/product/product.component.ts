@@ -30,14 +30,16 @@ export class ProductComponent implements OnInit {
 
     if (this.product.models) {
       this.models = Object.keys(this.product.models);
-      const metaTags = {
-        title: `${this.product.name} | Quadri`,
-        description: this.product.text,
-        image: this.product.presentacion,
-        slug: `/productos/${this.id}`,
-      };
-      this.seoService.generateTags(metaTags);
     }
+
+    const metaTags = {
+      title: `${this.product.name} | Quadri`,
+      description: this.product.text,
+      image: this.product.presentacion,
+      slug: `/productos/${this.id}`,
+    };
+    this.seoService.generateTags(metaTags);
+
   }
 
   routeTo(model) {

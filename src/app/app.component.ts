@@ -2,7 +2,6 @@ import { Component, Inject, HostListener, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { DOCUMENT } from '@angular/common';
 import { WINDOW } from './shared/services/window.service';
-import { AnalyticsService } from './shared/services';
 
 @Component({
   selector: 'app-root',
@@ -20,12 +19,10 @@ export class AppComponent {
     @Inject(DOCUMENT) document,
     @Inject(WINDOW) private window: Window,
     @Inject(PLATFORM_ID) private platformId: Object,
-    private analyticsS: AnalyticsService
   ) {
     this.doc = document;
     this.win = window;
     this.getVH();
-    this.analyticsS.trackRouter();
   }
 
   @HostListener('window:resize', ['$event'])

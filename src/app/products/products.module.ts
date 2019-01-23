@@ -8,6 +8,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { QuarzoComponent } from './quarzo/quarzo.component';
 
 import { SharedModule } from '../shared';
+import { PiletasComponent } from './piletas/piletas.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { SharedModule } from '../shared';
     ProdMenuComponent,
     ProductComponent,
     QuarzoComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    PiletasComponent
   ]
 })
 export class ProductsModule { }

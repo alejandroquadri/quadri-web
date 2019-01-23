@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { QueryComponent } from './../query/query.component';
-import { StaticService, AnalyticsService } from '../../services';
+import { StaticService } from '../../services';
 
 @Component({
   selector: 'app-cta-buttons',
@@ -28,7 +28,6 @@ export class CtaButtonsComponent implements OnInit {
   constructor(
     private statisData: StaticService,
     private modalService: NgbModal,
-    private analytics: AnalyticsService
   ) { }
 
   ngOnInit() {
@@ -41,7 +40,6 @@ export class CtaButtonsComponent implements OnInit {
     if (this.interest) {
       modalRef.componentInstance.data = JSON.stringify(this.interest);
     }
-    this.event('consulta formulario', 'aprieta boton', 10);
   }
 
   getSec() {
@@ -50,10 +48,6 @@ export class CtaButtonsComponent implements OnInit {
 
   getTer() {
     this.ter.emit(true);
-  }
-
-  event(category, action, value) {
-    this.analytics.sendEvent(category, undefined, action, value);
   }
 
 }

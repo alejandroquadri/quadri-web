@@ -88,6 +88,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://quadri.com.ar/productos/losetas/piletas</loc>
+  <lastmod>2019-01-16T20:32:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://quadri.com.ar/productos/3d</loc>
   <lastmod>2019-01-16T20:32:18+00:00</lastmod>
   <priority>0.80</priority>
@@ -107,12 +112,11 @@
   <lastmod>2019-01-16T20:32:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-<var><url>
+<url>
   <loc>https://quadri.com.ar/productos/rusticato</loc>
   <lastmod>2019-01-16T20:32:18+00:00</lastmod>
   <priority>0.80</priority>
-</url></var>
+</url>
 <url>
   <loc>https://quadri.com.ar/nosotros/</loc>
   <lastmod>2019-01-16T20:32:17+00:00</lastmod>

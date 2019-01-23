@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { StaticService, SeoService } from '../../shared';
 
 @Component({
-  selector: 'app-product',
-  templateUrl: './quarzo.component.html',
-  styleUrls: ['./quarzo.component.scss']
+  selector: 'app-piletas',
+  templateUrl: './piletas.component.html',
+  styleUrls: ['./piletas.component.scss']
 })
-export class QuarzoComponent implements OnInit {
+export class PiletasComponent implements OnInit {
 
   product: any;
   models: Array<any>;
@@ -18,16 +18,13 @@ export class QuarzoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.product = this.staticData.data.products.collections.quarzo;
-    if (this.product.models) {
-      this.models = Object.keys(this.product.models);
-    }
+    this.product = this.staticData.data.products.collections.losetas.models.piletas;
 
     const metaTags = {
-      title: `${this.product.name} | Quadri`,
+      title: `Piletas | Quadri`,
       description: this.product.text,
       image: this.product.presentacion,
-      slug: '/productos/quarzo',
+      slug: '/productos/losetas/piletas',
     };
 
     this.seoService.generateTags(metaTags);

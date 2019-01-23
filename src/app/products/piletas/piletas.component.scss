@@ -38,73 +38,72 @@
   margin-top: 4rem;
 }
 
-.divImg {
-	height: 35vw;
-	width: 45%;
-	background-position: bottom;
+.format-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.format {
+  height: 21vw;
+  width: 21vw;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: white;
 }
 
-.divImg2 {
-	background-position: bottom;
+.gallery {
+  margin-top: 5rem;
+}
+
+.gallery-img {
+  height: 35rem;
+  width: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: white;
 }
 
-.text {
-	width: 35%;
+.format-names {
+  font-size: 1rem;
+  font-weight: 100;
 }
 
-.feature-title {
+.titulo {
   font-size: 2.5rem;
   font-weight: 100;
-  line-height: 1.2;
-  margin-bottom: 1rem;
 }
 
-.feature-text {
-  font-weight: 100;
-}
+@media (max-width: 744px) {
 
-
-@media (max-width: 576px) {
-
-  .model-container{
+  .format-container {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
   }
 
-  .model {
-    margin: 1rem auto 1rem auto;
-  }
+}
+
+@media (max-width: 576px) {
 
   .sub-title {
     font-size: 1rem;
     font-weight: 100;
   }
 
-  .text {
-		width:100%;
-	}
-
-	.divImg {
-		height: 35vh;
-    height: calc(var(--vh, 1vh) * 35);
-		width: 100%;
-		background-position: bottom;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	}
-
-	.headingMobile {
-		font-size: 3rem;
-  }
-  
   .imagen-presentacion {
     height: 60vh;
     height: calc(var(--vh, 1vh) * 60)
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 25rem;
   }
 
 }
@@ -124,6 +123,11 @@
   .imagen-presentacion {
     height: 70vh;
     height: calc(var(--vh, 1vh) * 70)
+  }
+
+  .format {
+    height: 15rem;
+    width: 15rem;
   }
   
 }

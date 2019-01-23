@@ -18,6 +18,8 @@ export class SeoService {
       ...tags
     };
 
+    // console.log(tags);
+
     // Set a title
     this.titleService.setTitle(tags.title);
 

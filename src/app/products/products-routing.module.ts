@@ -5,6 +5,7 @@ import { ProdMenuComponent } from './prod-menu/prod-menu.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { QuarzoComponent } from './quarzo/quarzo.component';
+import { PiletasComponent } from './piletas/piletas.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'quarzo',
     component: QuarzoComponent
+  },
+  {
+    path: 'losetas/piletas',
+    component: PiletasComponent
   },
   {
     path: ':id',
