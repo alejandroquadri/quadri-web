@@ -24,9 +24,9 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
             <button type="button" class="ml-2 btn btn-lg btn-outline-secondary botonConocer" (click)= "more()">Conocer mas</button>
           </div> -->
           <!-- <app-cta-buttons [primary]="true" [secondary]="true" (sec)=more($event)></app-cta-buttons> -->
-          <app-cta-buttons [changeTheme]="false" [primary]="true" 
-          [terciary]="true" [tText]="'+ INFO'" (ter)="more($event)"
-          [secondary]="true" [sText]="'ver colecciones'" (sec)="router.navigate(['/productos'])"
+          <app-cta-buttons [changeTheme]="false" [primary]="true" [pText]="'Consulta'"
+          [terciary]="true" [tText]="'Objetos'" (ter)="toQueo()"
+          [secondary]="true" [sText]="'Revestimientos'" (sec)="router.navigate(['/productos'])"
           ></app-cta-buttons>
         </div>
       </div>

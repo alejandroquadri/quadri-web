@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
+
+import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 import { StaticService } from '../../services/static.service';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +12,12 @@ import { StaticService } from '../../services/static.service';
 })
 export class HeaderComponent implements OnInit {
 
+  public externalLinkIcon = faExternalLinkSquareAlt;
+
   constructor(
     public router: Router,
-    public staticData: StaticService
+    public staticData: StaticService,
+    @Inject(DOCUMENT) private document: any
   ) { }
 
   isExpanded = false;
@@ -19,6 +25,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.logo = this.staticData.logo;
+  }
+
+  toQueo() {
+    this.isExpanded = false;
+    this.document.location.href = 'https://queo.com.ar';
   }
 
 }

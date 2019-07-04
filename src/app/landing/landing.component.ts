@@ -30,9 +30,9 @@ export class LandingComponent implements OnInit {
     private staticData: StaticService,
     public router: Router,
     private seoService: SeoService,
-    @Inject(DOCUMENT) document
+    @Inject(DOCUMENT) private document: any,
   ) {
-    this.doc = document;
+    // this.doc = document;
     this.data = this.staticData.data.landing;
     this.images = this.staticData.data.projectImgs;
 
@@ -55,8 +55,7 @@ export class LandingComponent implements OnInit {
     // !! el codigo de abajo sirve para cambiar el css para que el carousel quede fullscreen
     if (this.carrousel) {
       setTimeout( () => {
-        // this.carouselInner = document.getElementsByClassName('carousel-inner');
-        this.carouselInner = this.doc.getElementsByClassName('carousel-inner');
+        this.carouselInner = this.document.getElementsByClassName('carousel-inner');
         this.carouselInner[0].style.cssText = `
             height: 100%;
         `;
@@ -74,11 +73,11 @@ export class LandingComponent implements OnInit {
   // esta funcion es para que el carousel quede full screen
   changeCSS() {
     setTimeout( () => {
-      this.carouselItems = this.doc.querySelectorAll('.carousel-item');
+      this.carouselItems = this.document.querySelectorAll('.carousel-item');
       for (let i = 0; i < this.carouselItems.length; i++) {
         this.carouselItems[i].style.display = 'none';
       }
-      this.active = this.doc.querySelectorAll('.carousel-item.active');
+      this.active = this.document.querySelectorAll('.carousel-item.active');
 
       this.active[0].style.height = '100%';
       this.active[0].style.display = 'flex';
@@ -91,6 +90,10 @@ export class LandingComponent implements OnInit {
 
   more() {
     this.terrazzo.nativeElement.scrollIntoView({ block: 'start', inline: 'nearest',  behavior: 'smooth' });
+  }
+
+  toQueo() {
+    this.document.location.href = 'https://queo.com.ar';
   }
 
   terciary(ter) {

@@ -32,7 +32,7 @@ export class ProdMenuComponent implements OnInit {
     this.ambients = this.staticData.data.ambients;
 
     const metaTags = {
-      title: 'Nuestros productos | Quadri',
+      title: 'Nuestros productos | Terrazzo Quadri',
       description: 'Conoce todas nuestras lineas de productos',
       image: this.featured,
       slug: '/productos',

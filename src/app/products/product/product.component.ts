@@ -33,7 +33,7 @@ export class ProductComponent implements OnInit {
     }
 
     const metaTags = {
-      title: `${this.product.name} | Quadri`,
+      title: `${this.product.name} | Terrazzo Quadri`,
       description: this.product.text,
       image: this.product.presentacion,
       slug: `/productos/${this.id}`,

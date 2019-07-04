@@ -40,7 +40,7 @@ export class ApplicationComponent implements OnInit {
     this.products = this.staticData.data.products.collections;
 
     const metaTags = {
-      title: `${ this.application.titulo } | Quadri`,
+      title: `${ this.application.titulo } | Terrazzo Quadri`,
       // tslint:disable-next-line:max-line-length
       description: this.application.texto,
       image: this.application.presentacion,

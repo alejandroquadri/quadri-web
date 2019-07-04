@@ -2,6 +2,8 @@ import { Component, Inject, HostListener, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { DOCUMENT } from '@angular/common';
 import { WINDOW } from './shared/services/window.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { EmailCaptureComponent } from './shared';
 
 @Component({
   selector: 'app-root',
@@ -19,10 +21,12 @@ export class AppComponent {
     @Inject(DOCUMENT) document,
     @Inject(WINDOW) private window: Window,
     @Inject(PLATFORM_ID) private platformId: Object,
+    private modalService: NgbModal,
   ) {
     this.doc = document;
     this.win = window;
     this.getVH();
+    this.captureMail();
   }
 
   @HostListener('window:resize', ['$event'])
@@ -43,6 +47,16 @@ export class AppComponent {
 
     if (isPlatformServer(this.platformId)) {
       console.log('serverside');
+    }
+  }
+
+  captureMail() {
+    if (isPlatformBrowser(this.platformId)) {
+      // console.log('llama a la funcion de modal');
+      setTimeout( () => {
+        // console.log('arranca el modal');
+        const modalRef = this.modalService.open(EmailCaptureComponent, { centered: true});
+      }, 30000);
     }
   }
 

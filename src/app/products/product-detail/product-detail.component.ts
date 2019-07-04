@@ -26,7 +26,7 @@ export class ProductDetailComponent implements OnInit {
     this.modelData = prod.models[this.model];
 
     const metaTags = {
-      title: `${ this.modelData.name } | Quadri`,
+      title: `${ this.modelData.name } | Terrazzo Quadri`,
       description: this.modelData.text,
       image: this.modelData.presentacion,
       slug: `/productos/${this.prod}/${this.modelData}`,

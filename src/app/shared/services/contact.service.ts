@@ -17,4 +17,8 @@ export class ContactService {
   saveQuery(query) {
     return this.api.push('quadri/queries', query);
   }
+
+  captureEmail(email) {
+    return this.api.push('quadri/emails', {email: email});
+  }
 }

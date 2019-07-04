@@ -1,7 +1,9 @@
 import { Router } from '@angular/router';
-import { Component, OnInit, ViewChild, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener, Renderer2, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+
 import { StaticService, SeoService } from '../../shared';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faSpinner, faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-app-menu',
@@ -13,7 +15,10 @@ export class AppMenuComponent implements OnInit {
   data: any;
   appMenu: any;
 
-  spinner = faSpinner;
+  public spinner = faSpinner;
+  public externalLinkIcon = faExternalLinkSquareAlt;
+  public queoLogo = './assets/icons/Queo-quadri-dark-tp.png';
+
 
   // @ViewChild('pisosInt') pisosInt: ElementRef; lo dejo para tener de referencia como intervenir un elemento
   @ViewChild('pisosExt') pisosExt: ElementRef;
@@ -25,7 +30,8 @@ export class AppMenuComponent implements OnInit {
     public staticData: StaticService,
     private router: Router,
     // private renderer: Renderer2,
-    private seoService: SeoService
+    private seoService: SeoService,
+    @Inject(DOCUMENT) private document: any
   ) {
     this.data = this.staticData.data;
     this.appMenu = this.staticData.data.appMenu;
@@ -45,6 +51,10 @@ export class AppMenuComponent implements OnInit {
 
   goTo(path: string) {
     this.router.navigate([path]);
+  }
+
+  toQueo() {
+    this.document.location.href = 'https://queo.com.ar';
   }
 
   // lo dejo de referencia para saber como intervenir un elemento

@@ -17,6 +17,11 @@
         <li class="nav-item" routerLinkActive="active" (click)="isExpanded = false">
           <a class="nav-link" [routerLink]="['/productos']">Productos</a>
         </li>
+        <li class="nav-item" routerLinkActive="active" (click)="toQueo()">
+          <a class="nav-link" href="https://www.queo.com.ar/">
+            Queo <fa-icon class="external-icon" [icon]="externalLinkIcon"></fa-icon>
+          </a>
+        </li>
         <!-- <li class="nav-item" routerLinkActive="active" (click)="isExpanded = false">
           <a class="nav-link" [routerLink]="['/inspiracion']">Inspiracion</a>
         </li> -->

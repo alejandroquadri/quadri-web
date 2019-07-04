@@ -18,6 +18,7 @@ import { TrustQuadriComponent } from './components/trust-quadri/trust-quadri.com
 import { BlendsComponent } from './components/blends/blends.component';
 import { TerrazzoComponent } from './components/terrazzo/terrazzo.component';
 import { CtaButtonsComponent } from './components/cta-buttons/cta-buttons.component';
+import { EmailCaptureComponent } from './components/email-capture/email-capture.component';
 
 // directives
 import { HoverDirective } from './directives/hover.directive';
@@ -56,7 +57,8 @@ import { QueryComponent } from './components/query/query.component';
     ToArrayPipe,
     TerrazzoComponent,
     CtaButtonsComponent,
-    QueryComponent
+    QueryComponent,
+    EmailCaptureComponent
   ],
   entryComponents: [
     QueryComponent,
@@ -80,7 +82,8 @@ import { QueryComponent } from './components/query/query.component';
     CtaButtonsComponent,
     HoverDirective,
     SortPipe,
-    ToArrayPipe
+    ToArrayPipe,
+    EmailCaptureComponent
   ]
 })
 export class SharedModule { }
