@@ -12,6 +12,10 @@ import { DOCUMENT } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
 
+
+  isExpanded = false;
+  logo: string;
+  blackLogo: string;
   public externalLinkIcon = faExternalLinkSquareAlt;
 
   constructor(
@@ -20,11 +24,18 @@ export class HeaderComponent implements OnInit {
     @Inject(DOCUMENT) private document: any
   ) { }
 
-  isExpanded = false;
-  logo: any;
-
   ngOnInit() {
     this.logo = this.staticData.logo;
+    this.blackLogo = this.staticData.logoNegro;
+  }
+
+  white() {
+    const route = this.router.url;
+    if (route.substring(1, 4) === 'obj') {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   toQueo() {

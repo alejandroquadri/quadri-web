@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-sm-12 p-0 application" (click) = "toQueo()" >
+      <div class="col-md-6 col-sm-12 p-0 application" (click) = "goTo('/objetos')" >
         <div class="spinner-wrapper d-flex flex-column justify-content-center w-100">
           <div class="text-center w-100 spinner">
             <fa-icon class="icons p-3" [icon]="spinner" [spin]="true"></fa-icon>
@@ -63,9 +63,9 @@
         <div [ngStyle]="{'background-image': 'url(' + appMenu.mesas.img + ')'}"
         class="custom"></div>
         <div #mesas class="flex-column justify-content-center w-100 appText" [hidden]="true">
-          <!-- <div class="align-self-center w-100"><img [src]="appMenu.mesas.icon" class="iconsH p-2 mb-3" alt=""></div> -->
-          <div class="align-self-center w-100"><img [src]="queoLogo" class="icons-queo p-2 mb-3" alt=""></div>
-          <div class="appNames text-center p-2 align-self-center">{{ appMenu.mesas.text }} <fa-icon class="external-icon" [icon]="externalLinkIcon"></fa-icon></div>
+          <div class="align-self-center w-100"><img [src]="appMenu.mesas.icon" class="iconsH p-2 mb-3" alt=""></div>
+          <!-- <div class="align-self-center w-100"><img [src]="queoLogo" class="icons-queo p-2 mb-3" alt=""></div> -->
+          <div class="appNames text-center p-2 align-self-center">{{ appMenu.mesas.text }}</div>
         </div>
       </div>
 

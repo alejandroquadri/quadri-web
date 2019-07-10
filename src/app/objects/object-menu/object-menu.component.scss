@@ -1,0 +1,129 @@
+.title-wrapper {
+  margin-top: 1rem;
+}
+
+.sub-title {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.product-container{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col-title {
+  margin: 1rem 1rem 1rem 0rem;
+  cursor: pointer;
+}
+
+.col-title:hover {
+  text-decoration: underline;
+}
+
+.prod {
+  height: 21rem;
+  width: 21rem;
+  position: relative;
+  margin: 1rem;
+}
+
+.background {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+// hago target al hijo de la clase .prod cuando hoover. puntualente sobre div.background
+.prod:hover>div.background {
+  -webkit-filter: brightness(70%);
+  -moz-filter: brightness(70%);
+  -o-filter: brightness(70%);
+  -ms-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+.text-wrapper, .spinner-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: white;
+  width: 100%;
+}
+
+.text-wrapper:hover {
+  cursor: pointer;
+}
+
+.prod-name {
+  background-color: var(--grey);
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.spinner {
+  font-size: 3rem;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  
+  .sub-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .title {
+    font-size: 2rem;
+    font-weight: 130;
+    color: white;
+  }
+
+  .sub-title {
+    font-size: 0.95rem;
+  }
+
+  .product-container{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .prod {
+    margin: 1rem auto 1rem auto;
+  }
+  
+}
+
+@media (max-width: 325px) {
+
+  .sub-title {
+    font-size: 0.8rem;
+  }
+
+  .col-title {
+    font-size: 0.9rem;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+  }
+
+  .col-title-line {
+    font-size: 0.9rem;
+  }
+
+  .prod {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+

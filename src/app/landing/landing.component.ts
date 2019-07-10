@@ -51,6 +51,7 @@ export class LandingComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
 
     // !! el codigo de abajo sirve para cambiar el css para que el carousel quede fullscreen
     if (this.carrousel) {

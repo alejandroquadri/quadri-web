@@ -19,6 +19,7 @@ import { BlendsComponent } from './components/blends/blends.component';
 import { TerrazzoComponent } from './components/terrazzo/terrazzo.component';
 import { CtaButtonsComponent } from './components/cta-buttons/cta-buttons.component';
 import { EmailCaptureComponent } from './components/email-capture/email-capture.component';
+import { BuyModalComponent } from './components';
 
 // directives
 import { HoverDirective } from './directives/hover.directive';
@@ -58,7 +59,8 @@ import { QueryComponent } from './components/query/query.component';
     TerrazzoComponent,
     CtaButtonsComponent,
     QueryComponent,
-    EmailCaptureComponent
+    EmailCaptureComponent,
+    BuyModalComponent
   ],
   entryComponents: [
     QueryComponent,
@@ -83,7 +85,8 @@ import { QueryComponent } from './components/query/query.component';
     HoverDirective,
     SortPipe,
     ToArrayPipe,
-    EmailCaptureComponent
+    EmailCaptureComponent,
+    BuyModalComponent
   ]
 })
 export class SharedModule { }

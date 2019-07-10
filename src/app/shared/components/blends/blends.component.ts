@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { StaticService } from '../../services';
 
 @Component({
@@ -9,6 +9,7 @@ import { StaticService } from '../../services';
 export class BlendsComponent implements OnInit {
 
   @Input() colors: Array<any>;
+  @Output() selected = new EventEmitter();
   colorsUrl: any;
 
   constructor(
@@ -17,10 +18,14 @@ export class BlendsComponent implements OnInit {
 
   ngOnInit() {
     this.colorsUrl = this.staticData.data.colors;
+    
   }
 
   expand(color) {
-    console.log(color);
+  }
+
+  select(color) {
+    this.selected.emit(color);
   }
 
 }

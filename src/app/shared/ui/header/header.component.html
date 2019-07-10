@@ -1,9 +1,12 @@
-<!-- <nav class="navbar navbar-expand-lg sticky-top navbar-dark" [ngClass]="{'landing': router.url === '/', 'notLanding': !(router.url === '/'),'expandedMobile':isExpanded}"> -->
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark landing">
-  <!-- <div class="container"> -->
+<nav class="navbar navbar-expand-lg sticky-top landing"
+  [ngClass]="{
+    'navbar-dark': !white(),
+    'navbar-light notLanding-white': white()
+    }"
+>
 
     <a class="navbar-brand" [routerLink]="['/']">
-      <img [src]="logo" width="100" alt="">
+      <img [src]="white() ? blackLogo : logo" width="100" alt="">
     </a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" 
     aria-controls="navbarNav" [attr.aria-expanded]="!isExpanded" aria-label="Toggle navigation" (click)="isExpanded = !isExpanded">
@@ -15,12 +18,10 @@
           <a class="nav-link" [routerLink]="['/aplicaciones']">Aplicaciones</a>
         </li>
         <li class="nav-item" routerLinkActive="active" (click)="isExpanded = false">
-          <a class="nav-link" [routerLink]="['/productos']">Productos</a>
+          <a class="nav-link" [routerLink]="['/productos']">Revestimientos</a>
         </li>
-        <li class="nav-item" routerLinkActive="active" (click)="toQueo()">
-          <a class="nav-link" href="https://www.queo.com.ar/">
-            Queo <fa-icon class="external-icon" [icon]="externalLinkIcon"></fa-icon>
-          </a>
+        <li class="nav-item" routerLinkActive="active" (click)="isExpanded = false">
+          <a class="nav-link" [routerLink]="['/objetos']">Objetos</a>
         </li>
         <!-- <li class="nav-item" routerLinkActive="active" (click)="isExpanded = false">
           <a class="nav-link" [routerLink]="['/inspiracion']">Inspiracion</a>

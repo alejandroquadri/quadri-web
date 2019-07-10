@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Injectable, Inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Injectable({
@@ -6,7 +7,11 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class SeoService {
 
-  constructor(private meta: Meta, private titleService: Title) { }
+  constructor(
+    private meta: Meta,
+    private titleService: Title,
+    @Inject(DOCUMENT) private dom
+    ) { }
 
   generateTags(tags) {
     // default values
@@ -40,4 +45,11 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:image', content: tags.image });
     this.meta.updateTag({ property: 'og:url', content: `https://www.quadri.com.ar/${tags.slug}` });
   }
+
+  createCanonicalURL() {
+    const link: HTMLLinkElement = this.dom.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    this.dom.head.appendChild(link);
+    link.setAttribute('href', this.dom.URL);
+ }
 }

@@ -25,7 +25,7 @@ Como el template de cada slide se crea dinamicamente por el componente de ng-boo
           </div> -->
           <!-- <app-cta-buttons [primary]="true" [secondary]="true" (sec)=more($event)></app-cta-buttons> -->
           <app-cta-buttons [changeTheme]="false" [primary]="true" [pText]="'Consulta'"
-          [terciary]="true" [tText]="'Objetos'" (ter)="toQueo()"
+          [terciary]="true" [tText]="'Objetos'" (ter)="router.navigate(['/objetos'])"
           [secondary]="true" [sText]="'Revestimientos'" (sec)="router.navigate(['/productos'])"
           ></app-cta-buttons>
         </div>

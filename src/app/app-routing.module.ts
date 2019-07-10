@@ -14,7 +14,11 @@ const routes: Routes = [
   },
   {
     path: 'productos',
-    loadChildren: './products/products.module#ProductsModule' 
+    loadChildren: './products/products.module#ProductsModule'
+  },
+  {
+    path: 'objetos',
+    loadChildren: './objects/object.module#ObjectModule'
   },
   {
     path: 'enlaces',

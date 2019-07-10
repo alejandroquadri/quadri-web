@@ -5,3 +5,4 @@ export * from './dim/dim.component';
 export * from './applications/applications.component';
 export * from './terrazzo/terrazzo.component';
 export * from './email-capture/email-capture.component';
+export * from './buy-modal/buy-modal.component';

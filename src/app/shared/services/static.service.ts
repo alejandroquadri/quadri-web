@@ -16,6 +16,7 @@ export class StaticService {
   data$: any;
 
   logo = './assets/icons/LogoQuadriFondoBlanco.png';
+  logoNegro = './assets/icons/LogoQuadriNegro.png';
 
   constructor(
     private api: ApiService,

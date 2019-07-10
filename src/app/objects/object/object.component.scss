@@ -1,0 +1,167 @@
+.wrapper {
+  min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
+  margin-top: var(--navbar-height);
+}
+
+.prod-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem; 
+}
+
+.prod-imgs, .prod-data {
+  height: 100%
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0px;
+}
+
+.caption-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.custom {
+	height: 33rem;
+  width: 100%;
+  background-color: transparent;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spinner-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: white;
+  width: 100%;
+  z-index: -1
+}
+
+.spinner {
+  font-size: 3rem;
+  color: black;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: var(--grey);
+  font-weight: 100;
+}
+
+.qty {
+  width: 2.5rem;
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+
+input.qty::-webkit-outer-spin-button,
+input.qty::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+select { 
+  background-color: transparent;
+}
+
+.botonQty {
+  background-color: transparent;
+}
+
+.botonQty:hover {
+  background-color: black;
+}
+
+.botonComprar {
+	color: white;
+	background-color: var(--green-dark);
+	border-color: var(--green-dark);
+}
+
+.botonComprar:hover {
+	color: white;
+	background-color: var(--green-light);
+	border-color: var(--green-light);
+	cursor: pointer;
+}
+
+.botonComprar:active {
+  color: white;
+  background-color: var(--green-light);
+	border-color: var(--green-light);
+  box-shadow: 0 0 0 0.2rem var(--green-dark);
+}
+
+.especificaciones {
+  font-weight: 100;
+}
+
+.desc-esp {
+  font-weight: 100;
+}
+
+.desc-title {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.descripcion {
+  white-space: pre-wrap;
+  // esto hace que con nueva linea (\n) lo haga y tambien cuando no hay espacio
+}
+
+@media (max-width: 800px) {
+
+  .title {
+    font-size: 2rem;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  
+  .prod-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem; 
+  }
+  
+  .custom {
+    height: 17rem;
+  }
+
+}

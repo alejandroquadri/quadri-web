@@ -5,9 +5,9 @@
       <div *ngFor="let color of colors" class="align-self-center d-flex flex-column align-items-center">
 
         <div  class="color mx-3 mt-3 mb-1" 
-        (click)="expand(color)" [ngStyle]="{'background-image': 'url(' + colorsUrl[color].url + ')'}">
+        (click)="select(color)" [ngStyle]="{'background-image': 'url(' + colorsUrl[color.name || color].url + ')'}">
         </div>
-        <div class="text-center w-100 color-names">{{ colorsUrl[color].name }} </div>
+        <div class="text-center w-100 color-names">{{ colorsUrl[color.name || color].name }} </div>
 
       </div>
     </div>
