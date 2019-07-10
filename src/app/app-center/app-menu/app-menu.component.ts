@@ -47,6 +47,7 @@ export class AppMenuComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
   }
 
   goTo(path: string) {

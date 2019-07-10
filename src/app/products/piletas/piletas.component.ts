@@ -28,6 +28,7 @@ export class PiletasComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
   }
 
 }

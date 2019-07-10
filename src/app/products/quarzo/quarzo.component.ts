@@ -31,6 +31,7 @@ export class QuarzoComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
   }
 
 }

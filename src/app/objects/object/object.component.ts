@@ -63,10 +63,11 @@ export class ObjectComponent implements OnInit {
       // tslint:disable-next-line:max-line-length
       description: this.product.text,
       image: this.product.bgImg,
-      slug: `productos/${this.colKey}/${this.prodKey}`,
+      slug: `objetos/${this.colKey}/${this.prodKey}`,
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
 
   }
 

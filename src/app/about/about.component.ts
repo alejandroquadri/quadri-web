@@ -26,6 +26,7 @@ export class AboutComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
   }
 
 }

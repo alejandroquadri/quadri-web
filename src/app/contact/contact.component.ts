@@ -73,6 +73,7 @@ export class ContactComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
     this.buildForm();
   }
 

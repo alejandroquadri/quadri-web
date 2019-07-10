@@ -39,6 +39,7 @@ export class ProductComponent implements OnInit {
       slug: `/productos/${this.id}`,
     };
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
 
   }
 

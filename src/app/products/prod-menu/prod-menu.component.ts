@@ -39,6 +39,7 @@ export class ProdMenuComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
   }
 
   routeTo(prod) {

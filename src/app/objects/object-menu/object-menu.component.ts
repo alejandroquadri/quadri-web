@@ -38,10 +38,11 @@ export class ObjectMenuComponent implements OnInit {
       // tslint:disable-next-line:max-line-length
       description: `Diseñamos objetos y muebles de terrazzo para sorprender. Fabricados con maxima dedicacion. Llevamos el estudio de los materiales a su mayor exponente`,
       image: this.staticData.data.landing.slides[0].img,
-      slug: 'productos',
+      slug: 'objetos',
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
   }
 
   scrollCol(collection) {

@@ -48,6 +48,7 @@ export class ApplicationComponent implements OnInit {
     };
 
     this.seoService.generateTags(metaTags);
+    this.seoService.createCanonicalURL();
   }
 
   routeTo(prod) {
