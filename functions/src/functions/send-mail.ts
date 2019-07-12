@@ -15,6 +15,7 @@ export function send(snapshot:any, context:any) {
   const mailOptions = {
     from: `"Presupuestos" <presupuestos@quadri.com.ar>`,
     to: "info@quadri.com.ar",
+    replyTo: `${consulta.email}`,
     subject: `Quadri - Consulta ${interest}`,
     text : `${consulta.name} - ${consulta.email} - ${consulta.telephone}\n \n${consulta.query}`
   };
