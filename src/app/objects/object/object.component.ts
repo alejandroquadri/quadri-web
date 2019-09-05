@@ -55,9 +55,13 @@ export class ObjectComponent implements OnInit {
     }
     this.currentFormat = this.product.format[0];
     this.currentColor = this.currentFormat.colors[0];
-    this.imgArray =  this.currentColor.imgs;
-    this.buildForm();
+    this.imgArray =  this.product.format[0].colors[0].imgs;
 
+    this.buildForm();
+    this.setSEO();
+  }
+
+  setSEO() {
     const metaTags = {
       title: `${this.product.name} | Productos ${this.colKey} Quadri`,
       // tslint:disable-next-line:max-line-length
@@ -68,133 +72,57 @@ export class ObjectComponent implements OnInit {
 
     this.seoService.generateTags(metaTags);
     this.seoService.createCanonicalURL();
-
-  }
-
-  cambio(event) {
-    // console.log('slide', event);
   }
 
   buildForm() {
     this.buyForm = this.fb.group({
-      format: [this.currentFormat, Validators.required],
-      color: [this.currentColor, Validators.required],
-      setColors: this.fb.array([]),
+      format: [this.product.format[0], Validators.required],
+      colorsCtrl: this.fb.array([]),
       qty: [ 1, Validators.required],
     });
-    this.addSet();
-    this.formChanges();
+    this.addSet(this.buyForm.value.format);
+    this.seeFormChanges();
   }
 
-  addSet() {
-    if (this.currentFormat.set) {
-
-      this.buyForm.get('color').clearValidators();
-      this.currentFormat.set.sizes.forEach( (size, index) => {
-        this.addSetCont();
-        this.setControls.controls[index].patchValue(this.currentColor);
-      });
-      this.buyForm.get('color').patchValue('');
-      this.imgArray =  this.currentFormat.set.imgs;
-
-    } else {
-
-      this.buyForm.patchValue({
-        color: this.currentColor
-      });
-      this.buyForm.get('color').setValidators([Validators.required]);
-      this.imgArray =  this.currentColor.imgs;
-
-    }
-
+  get colorsCtrl() {
+    return this.buyForm.get('colorsCtrl') as FormArray;
   }
 
-  // esta funcion de aca abajo es un getter. La uso para poder hacer referencia con
-  // mas facilidad. Abajo la referencia
-  // https://angular.io/guide/reactive-forms#dynamic-controls-using-form-arrays
-  get setControls() {
-    return this.buyForm.get('setColors') as FormArray;
+  addColorCtrl(color) {
+    this.colorsCtrl.push(this.fb.group({
+      color: [color, Validators.required],
+    }));
   }
 
-  addSetCont() {
-    this.setControls.push(this.fb.control([Validators.required]));
-  }
-
-  setColorArray() {
-    if (this.currentFormat.set) {
-      this.imgArray = this.currentFormat.set.imgs;
-    } else {
-      this.imgArray = this.currentColor.imgs;
+  clearColors() {
+    while (this.colorsCtrl.value.length !== 0) {
+      this.colorsCtrl.removeAt(0);
     }
   }
 
-  addSet2() {
-    if (this.currentFormat.set) {
-
-      this.buyForm.get('color').clearValidators();
-      const control = <FormArray>this.buyForm.controls['setColors'];
-
-      this.currentFormat.set.sizes.forEach( (size, index) => {
-
-        this.addColor();
-
-        this.setControls.controls[index].patchValue(this.currentColor);
-        console.log(this.currentColor, this.currentFormat.colors);
-      });
-      this.buyForm.get('color').patchValue('');
-      this.imgArray =  this.currentFormat.set.imgs;
-
-    } else {
-
-      this.buyForm.patchValue({
-        color: this.currentColor
-      });
-      this.buyForm.get('color').setValidators([Validators.required]);
-      this.imgArray =  this.currentColor.imgs;
-
+  clearFormArray(formArray: FormArray) {
+    while (formArray.length !== 0) {
+      formArray.removeAt(0);
     }
-
   }
 
-  addColor() {
-    const control = <FormArray>this.buyForm.controls['setColors'];
-    control.push(this.initColor());
+  addSet(format) {
+    // console.log('formato elegido', format);
+    if (format.set) {
+      format.set.sizes.forEach( (size, index) => {
+        this.addColorCtrl(format.colors[0]);
+      });
+      this.imgArray =  format.set.imgs;
+    } else {
+      this.addColorCtrl(format.colors[0]);
+      this.imgArray =  format.colors[0].imgs;
+    }
   }
 
-  initColor() {
-    return this.fb.group({
-      color: ['', Validators.required]
-    });
-  }
-
-  formChanges() {
+  seeFormChanges() {
     this.buyForm.controls['format'].valueChanges.subscribe(val => {
-      this.currentFormat = val;
-      this.currentColor = this.currentFormat.colors[0];
-      this.buyForm.controls['setColors'] = this.fb.array([]);
-      this.addSet();
-    });
-    this.buyForm.controls['color'].valueChanges.subscribe(val => {
-      this.currentColor = val;
-      this.setColorArray();
-    });
-
-    // this.buyForm.controls.setColors.controls.valueChanges.subscribe( val => {
-    //   console.log('cambio en array', val);
-    // });
-
-    this.setControls.valueChanges.subscribe(values => {
-      console.log(values);
-    });
-
-    this.buyForm.valueChanges.subscribe( val => {
-      console.log('cambio el formulario', val);
-    });
-  }
-
-  changeColor(color) {
-    this.buyForm.patchValue({
-      color: color
+      this.clearColors();
+      this.addSet(val);
     });
   }
 
@@ -216,26 +144,25 @@ export class ObjectComponent implements OnInit {
 
   buy() {
     const buyForm = this.buyForm.value;
-    console.log(buyForm);
     const sendForm = {
       product: this.product.name,
       desc: buyForm.format.buyDesc,
       price: buyForm.format.price,
       qty: buyForm.qty
     };
-    if (buyForm.setColors.length > 0) {
+    if (buyForm.format.set) {
       const colors = [];
       buyForm.format.set.sizes.forEach( (size, index) => {
         const color = {
           size: size,
-          color: buyForm.setColors[index].name
+          color: buyForm.colorsCtrl[index].color.name
         };
         colors.push(color);
       });
       sendForm['color'] = colors;
       sendForm['set'] = true;
     } else {
-      sendForm['color'] = buyForm.color.name;
+      sendForm['color'] = buyForm.colorsCtrl[0].color.name;
       sendForm['set'] = false;
     }
     const modalRef = this.modalService.open(BuyModalComponent, {size: 'lg'});

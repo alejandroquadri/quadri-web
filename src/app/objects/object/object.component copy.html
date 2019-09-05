@@ -6,7 +6,7 @@
       <div class="row">
 
         <div class="prod-imgs col-sm-12 col-md-7">
-          <ngb-carousel #carousel [interval]="0"  [showNavigationArrows]="imgArray.length > 1? true : false" [showNavigationIndicators]="false">
+          <ngb-carousel #carousel [interval]="0"  [showNavigationArrows]="imgArray.length > 1? true : false" [showNavigationIndicators]="false" (slide)="cambio($event)">
             <ng-template ngbSlide *ngFor="let img of imgArray" >
               <div class="carousel-caption">
                 <div class="custom" [ngStyle]="{'background-image': 'url(' + img + ')'}"></div>
@@ -21,59 +21,72 @@
         </div>
 
         <div class="prod-data col-sm-12 col-md-5">
-          <form [formGroup]="buyForm" class="px-lg-5">
-
+          <form [formGroup]="buyForm" (ngSubmit)="submit()" class="px-lg-5">
             <div class="row">
               <div class="title col-12">{{ product.name }} </div>
             </div>
             <div class="row mb-3">
               <div class="price col-auto">$ {{ currentFormat.price }} </div>
             </div>
-            <div class="form-group row" *ngIf="product.format.length > 1">  
+            <div class="form-group row" *ngIf="product.format.length > 1">
+   
+   
               <label class="col-3 col-form-label">Formato</label>
               <div class="col-9">
                 <select class="form-control" formControlName="format">
-                  <option *ngFor="let formatP of product.format" [ngValue]="formatP"> {{ formatP?.name }} </option>
+                  <option *ngFor="let formatP of product.format | toArray" [ngValue]="formatP"> {{ formatP.name }} </option>
                 </select>
               </div>
             </div>
-
-            <div formArrayName="colorsCtrl">
-              <div *ngFor="let size of colorsCtrl.controls; let i=index">
-             
-                <div class="form-group row" [formGroupName]="i">
-
-                  <label class="col-3 col-form-label" *ngIf="!buyForm.value.format.set">Color</label>
-                  <label class="col-3 col-form-label" *ngIf="buyForm.value.format.set">{{ buyForm.value.format.set.sizes[i] }} </label>
+            <div class="form-group row" *ngIf="!currentFormat.set">
+              <label class="col-3 col-form-label">Color</label>
+              <div class="col-9">
+                <select class="form-control" formControlName="color">
+                  <option *ngFor="let colorObj of currentFormat.colors | toArray" [ngValue]="colorObj"> {{ colors[colorObj.name].name }} </option>
+                </select>
+              </div>
+            </div>
+            <div *ngIf="currentFormat.set" formArrayName="setColors">
+              <div *ngFor="let size of setControls.controls; let i=index">
+              <!-- <div *ngFor="let size of buyForm.controls.setColors.controls; let i=index"> -->
+                <div class="form-group row">
+                  <label class="col-3 col-form-label">{{ currentFormat.set.sizes[i] }} </label>
 
                   <div class="col-9">
+                      <select class="form-control" [formControlName]="i">
+                        <option *ngFor="let colorObj of currentFormat.colors | toArray" [ngValue]="colorObj"> {{ colors[colorObj.name].name }} </option>
+                      </select>
+                    </div>
+                  <!-- <div class="col-9" [formGroupName]="i">
                     <select class="form-control" formControlName="color">
-                      <option *ngFor="let colorObj of buyForm.value.format.colors" [ngValue]="colorObj"> {{ colors[colorObj.name].name }} </option>
+                      <option *ngFor="let colorObj of currentFormat.colors | toArray" [ngValue]="colorObj"> {{ colors[colorObj.name].name }} </option>
                     </select>
-                  </div>
-
+                  </div> -->
                 </div>
 
               </div>
             </div>
 
             <div class="form-group row">
-
-              <label class="col-3 col-form-label"> Cantidad </label>
-              <div class="col-9 pl-3">
-                <div class="row">
-                  <div class="col-auto pr-0">
-                    <button type="button" class="btn btn-outline-dark botonQty" (click)= "sub()" [disabled]="buyForm.controls['qty'].value === 1">-</button>
+              <!-- <div class="col-10">
+                <div class="row"> -->
+                  <label class="col-3 col-form-label"> Cantidad </label>
+                  <!-- <label class="col-auto col-form-label"> Cantidad </label> -->
+                  <div class="col-9 pl-3">
+                    <div class="row">
+                      <div class="col-auto pr-0">
+                        <button type="button" class="btn btn-outline-dark botonQty" (click)= "sub()" [disabled]="buyForm.controls['qty'].value === 1">-</button>
+                      </div>
+                      <div class="col-auto">
+                        <input type="number" class="form-control qty" formControlName="qty">
+                      </div>
+                      <div class="col-auto pl-0">
+                        <button type="button" class="btn btn-outline-dark botonQty" (click)= "add()">+</button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-auto">
-                    <input type="number" class="form-control qty" formControlName="qty">
-                  </div>
-                  <div class="col-auto pl-0">
-                    <button type="button" class="btn btn-outline-dark botonQty" (click)= "add()">+</button>
-                  </div>
-                </div>
-              </div>
-
+                <!-- </div>
+              </div> -->
             </div>
 
             <div class="form-group row mt-4">
@@ -92,7 +105,7 @@
 
   <div class="container">
       <div class="row">
-        <app-blends class="mb-2" [colors]="currentFormat.colors"></app-blends>
+        <app-blends class="mb-2" [colors]="currentFormat.colors" (selected)="changeColor($event)" ></app-blends>
       </div>
   </div>
 
