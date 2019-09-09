@@ -1,6 +1,5 @@
 import { Component, Inject, HostListener, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser, isPlatformServer } from '@angular/common';
-import { DOCUMENT } from '@angular/common';
+import { isPlatformBrowser, isPlatformServer, DOCUMENT } from '@angular/common';
 import { WINDOW } from './shared/services/window.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EmailCaptureComponent } from './shared';
@@ -51,13 +50,13 @@ export class AppComponent {
   }
 
   captureMail() {
-    // if (isPlatformBrowser(this.platformId)) {
-    //   // console.log('llama a la funcion de modal');
-    //   setTimeout( () => {
-    //     // console.log('arranca el modal');
-    //     const modalRef = this.modalService.open(EmailCaptureComponent, { centered: true});
-    //   }, 30000);
-    // }
+    if (isPlatformBrowser(this.platformId)) {
+      // console.log('llama a la funcion de modal');
+      setTimeout( () => {
+        // console.log('arranca el modal');
+        const modalRef = this.modalService.open(EmailCaptureComponent, { centered: true});
+      }, 30000);
+    }
   }
 
 }

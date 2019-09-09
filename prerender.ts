@@ -82,6 +82,7 @@ async function prerender() {
 
   // Loop over each route
   for (const route of ROUTES) {
+    console.log(route);
     const pageDir = join(browserBuild, route);
     await fs.ensureDir(pageDir);
 
