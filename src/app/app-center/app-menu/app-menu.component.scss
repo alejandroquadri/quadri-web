@@ -4,7 +4,7 @@
 }
 
 .row {
-  height: 50%;
+  height: 100%;
 }
 
 .texto {
@@ -34,11 +34,11 @@
 }
 
 .application:hover>div.custom {
-  -webkit-filter: brightness(40%);
-  -moz-filter: brightness(40%);
-  -o-filter: brightness(40%);
-  -ms-filter: brightness(40%);
-  filter: brightness(40%);
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+  -o-filter: brightness(80%);
+  -ms-filter: brightness(80%);
+  filter: brightness(80%);
 }
 
 .iconsH {
@@ -83,10 +83,19 @@
 }
 
 .appNames {
-  font-size: 1.5rem;
-  font-weight: 200;
-  letter-spacing: 0.2rem;
   color: white;
+  font-weight: 200;
+  height: 40%;
+  .text {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+  }
+  .sub-text {
+    font-size: 1.5rem;
+    // text-align: start;
+    padding: 1rem 1rem 0 1rem;
+    font-weight: 300;
+  }
 }
 
 .spinner {
@@ -98,12 +107,19 @@
 @media (max-width: 767.98px) {
 
   .apps {
-    height: auto;
+    height: calc(100vh - var(--navbar-height));
+    height: calc((var(--vh, 1vh) * 100 - var(--navbar-height))*2);
+    // height: auto;
   }
 
   .row {
-    height: calc(100vh - var(--navbar-height));
-    height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
+    // height: calc(100vh - var(--navbar-height));
+    // height: calc(var(--vh, 1vh) * 100 - var(--navbar-height));
+    height: 100%;
+  }
+
+  .appNames {
+    height: auto;
   }
 
  }
@@ -117,10 +133,6 @@
   
   .iconsV {
     height: 8rem;
-  }
-
-  .appNames {
-    font-size: 1.2rem;
   }
 
 }

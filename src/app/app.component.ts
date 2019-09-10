@@ -50,13 +50,13 @@ export class AppComponent {
   }
 
   captureMail() {
-    if (isPlatformBrowser(this.platformId)) {
-      // console.log('llama a la funcion de modal');
-      setTimeout( () => {
-        // console.log('arranca el modal');
-        const modalRef = this.modalService.open(EmailCaptureComponent, { centered: true});
-      }, 30000);
-    }
+    // if (isPlatformBrowser(this.platformId)) {
+    //   // console.log('llama a la funcion de modal');
+    //   setTimeout( () => {
+    //     // console.log('arranca el modal');
+    //     const modalRef = this.modalService.open(EmailCaptureComponent, { centered: true});
+    //   }, 30000);
+    // }
   }
 
 }

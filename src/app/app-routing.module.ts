@@ -9,7 +9,7 @@ import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   { path: '', component: LandingComponent },
   {
-    path: 'aplicaciones',
+    path: 'menu-productos',
     loadChildren: './app-center/app-center.module#AppCenterModule'
   },
   {

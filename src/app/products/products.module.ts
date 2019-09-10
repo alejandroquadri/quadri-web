@@ -9,6 +9,7 @@ import { QuarzoComponent } from './quarzo/quarzo.component';
 
 import { SharedModule } from '../shared';
 import { PiletasComponent } from './piletas/piletas.component';
+import { CustomComponent } from './custom/custom.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { PiletasComponent } from './piletas/piletas.component';
     ProductComponent,
     QuarzoComponent,
     ProductDetailComponent,
-    PiletasComponent
+    PiletasComponent,
+    CustomComponent
   ]
 })
 export class ProductsModule { }
