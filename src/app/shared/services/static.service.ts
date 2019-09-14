@@ -40,7 +40,6 @@ export class StaticService {
       this.data$ = this.api.getObject('quadriNew')
       .pipe(
         tap(obj => {
-          console.log(obj);
           this.state.set(DATA_KEY, obj);
         }),
         startWith(exists),
