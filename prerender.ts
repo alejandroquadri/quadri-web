@@ -17,6 +17,7 @@ import * as fs from 'fs-extra';
 // Add routes manually that you need rendered
 const ROUTES = [
   '/',
+  '/menu-productos',
   '/productos',
   '/productos/mosaicos',
   '/productos/durella',

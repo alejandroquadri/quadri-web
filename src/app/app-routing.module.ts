@@ -14,6 +14,10 @@ const routes: Routes = [
   },
   {
     path: 'productos',
+    loadChildren: './app-center/app-center.module#AppCenterModule'
+  },
+  {
+    path: 'productos',
     loadChildren: './products/products.module#ProductsModule'
   },
   {
