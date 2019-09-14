@@ -16,7 +16,7 @@ export class ProjectsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.projectData = this.staticData.data.inspiration;
+    this.projectData = this.staticData.data.pageCopy.inspiration;
     this.projectArray = Object.keys(this.projectData.projects);
   }
 

@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.data = this.staticData.data.about;
+    this.data = this.staticData.data.pageCopy.about;
     const metaTags = {
       title: 'Nosotros | Quadri',
       // tslint:disable-next-line:max-line-length

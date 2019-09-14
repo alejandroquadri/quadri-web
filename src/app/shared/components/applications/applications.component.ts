@@ -17,7 +17,7 @@ export class ApplicationsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.apps = this.staticData.data.apps;
+    this.apps = this.staticData.data.pageCopy.apps;
   }
 
   detWidth(app): String {

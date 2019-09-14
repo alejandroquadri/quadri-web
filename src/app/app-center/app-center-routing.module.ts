@@ -3,16 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 // import { AppCenterComponent } from './app-center.component';
 import { AppMenuComponent } from './app-menu/app-menu.component';
-import { ApplicationComponent } from './application/application.component';
 
 const routes: Routes = [
   {
     path: '',
     component: AppMenuComponent
-  },
-  {
-    path: ':id',
-    component: ApplicationComponent
   }
 ];
 

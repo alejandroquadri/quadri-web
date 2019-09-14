@@ -17,7 +17,7 @@ export class StepsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.data = this.staticData.data.components.steps;
+    this.data = this.staticData.data.pageCopy.components.steps;
   }
 
 }

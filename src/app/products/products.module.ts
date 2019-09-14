@@ -23,7 +23,7 @@ import { CustomComponent } from './custom/custom.component';
     QuarzoComponent,
     ProductDetailComponent,
     PiletasComponent,
-    CustomComponent
+    CustomComponent,
   ]
 })
 export class ProductsModule { }

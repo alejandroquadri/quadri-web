@@ -3,13 +3,20 @@
     <div class="text-center title">
       {{ data.title }}
     </div>
-    <div class="text">
-      <div *ngFor="let p of data.text" class="p">{{ p }}</div>
+    <div class="d-flex flex-column flex-md-row justify-content-md-around my-5">
+
+      <div class="text">
+        <div *ngFor="let p of data.text" class="p">{{ p }}</div>
+      </div>
+
+      <div class="divImg rounded" [ngStyle]="{'background-image': 'url(' + imgs[data.img].url + ')'}"></div>
+
     </div>
+
     <div class="botones">
     <app-cta-buttons [changeTheme]="true" [primary]="true" 
-    [terciary]="true" [tText]="'¡mas historia!'" (ter)="router.navigate(['/nosotros'])"
-    [secondary]="true" [sText]="'ver colecciones'" (sec)="router.navigate(['/productos'])"
+    [terciary]="true" [tText]="'¡Mas historia!'" (ter)="router.navigate(['/nosotros'])"
+    [secondary]="true" [sText]="'Productos'" (sec)="router.navigate(['/menu-productos'])"
     ></app-cta-buttons>
   </div>
 </div>

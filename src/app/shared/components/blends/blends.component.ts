@@ -18,7 +18,6 @@ export class BlendsComponent implements OnInit {
 
   ngOnInit() {
     this.colorsUrl = this.staticData.data.colors;
-    
   }
 
   expand(color) {

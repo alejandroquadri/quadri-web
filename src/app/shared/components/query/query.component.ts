@@ -31,7 +31,7 @@ export class QueryComponent implements OnInit {
   ngOnInit() {
     // console.log(this.datos);
     this.buildForm();
-    this.logoNegro = this.staticData.data.logos.quadri;
+    this.logoNegro = this.staticData.logoNegro;
     if (this.data) {
       this.datos = JSON.parse(this.data);
       console.log(this.datos);

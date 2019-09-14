@@ -18,7 +18,7 @@ export class QuarzoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.product = this.staticData.data.products.collections.quarzo;
+    this.product = this.staticData.data.products.quarzo;
     if (this.product.models) {
       this.models = Object.keys(this.product.models);
     }

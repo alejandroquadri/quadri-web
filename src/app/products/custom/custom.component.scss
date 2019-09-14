@@ -1,27 +1,12 @@
-.prod-header-wrapper{
-  position: relative;
-}
-
 .imagen-presentacion {
-  height: 50vh;
-  height: calc(var(--vh, 1vh) * 50);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: brightness(70%);
-  -moz-filter: brightness(70%);
-  -o-filter: brightness(70%);
-  -ms-filter: brightness(70%);
-  filter: brightness(70%);
+  color: white;
 }
 
 .title-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  color: white;
+  height: auto;
 }
 
 .title {
@@ -31,7 +16,7 @@
 
 .sub-title {
   font-size: 3.5vh;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .description {
@@ -40,14 +25,8 @@
 
 .divImg {
 	height: 35vw;
-	width: 45%;
-	background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.divImg2 {
-	background-position: bottom;
+	width: 35vw;
+	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -82,7 +61,6 @@
 
   .sub-title {
     font-size: 1rem;
-    font-weight: 100;
   }
 
   .text {
@@ -90,21 +68,19 @@
 	}
 
 	.divImg {
-		height: 35vh;
-    height: calc(var(--vh, 1vh) * 35);
-		width: 100%;
-		background-position: bottom;
-	  background-repeat: no-repeat;
-	  background-size: cover;
+    width: 90vw;
+    height: 90vw;
+		// background-position: center;
+	  // background-repeat: no-repeat;
+	  // background-size: cover;
 	}
 
 	.headingMobile {
 		font-size: 3rem;
   }
   
-  .imagen-presentacion {
-    height: 60vh;
-    height: calc(var(--vh, 1vh) * 60)
+  .title-wrapper {
+    padding: 5rem 2rem 3rem 2rem;
   }
 
 }
@@ -118,7 +94,6 @@
 
   .sub-title {
     font-size: 1rem;
-    font-weight: 100;
   }
 
   .imagen-presentacion {

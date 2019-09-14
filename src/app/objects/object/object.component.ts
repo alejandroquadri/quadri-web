@@ -48,7 +48,7 @@ export class ObjectComponent implements OnInit {
   ngOnInit() {
     this.colKey = this.route.snapshot.paramMap.getAll('col');
     this.prodKey = this.route.snapshot.paramMap.getAll('prod');
-    this.product = this.staticData.data.objects[this.colKey].products[this.prodKey];
+    this.product = this.staticData.data.products.objects[this.colKey].products[this.prodKey];
     this.colors = this.staticData.data.colors;
     if (!this.product) {
       this.router.navigate(['/']);

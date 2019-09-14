@@ -34,7 +34,7 @@ export class AppMenuComponent implements OnInit {
     @Inject(DOCUMENT) private document: any
   ) {
     this.data = this.staticData.data;
-    this.appMenu = this.staticData.data.appMenu;
+    this.appMenu = this.staticData.data.pageCopy.appMenu;
   }
 
   ngOnInit() {

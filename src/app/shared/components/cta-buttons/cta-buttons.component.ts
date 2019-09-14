@@ -31,7 +31,7 @@ export class CtaButtonsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.data = this.statisData.data.components.cta;
+    this.data = this.statisData.data.pageCopy.components.cta;
     if ( this.changeTheme) { this.lightTheme = !this.lightTheme; }
   }
 

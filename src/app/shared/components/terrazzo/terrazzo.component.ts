@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class TerrazzoComponent implements OnInit {
 
   data: any;
+  imgs: any;
 
   constructor(
     private staticData: StaticService,
@@ -17,7 +18,8 @@ export class TerrazzoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.data = this.staticData.data.components.terrazzo;
+    this.data = this.staticData.data.pageCopy.components.terrazzo;
+    this.imgs = this.staticData.data.imgs;
   }
 
 }

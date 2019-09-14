@@ -31,13 +31,13 @@ export class ObjectMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.collections = this.staticData.data.objects;
+    this.collections = this.staticData.data.products.objects;
 
     const metaTags = {
-      title: `Objetos diseñedos con terrazzo | Quadri`,
+      title: `Objetos diseñados con terrazzo | Quadri`,
       // tslint:disable-next-line:max-line-length
       description: `Diseñamos objetos y muebles de terrazzo para sorprender. Fabricados con maxima dedicacion. Llevamos el estudio de los materiales a su mayor exponente`,
-      image: this.staticData.data.landing.slides[0].img,
+      image: this.staticData.data.products.objects.accesorios.products.apoyaVasos.bgImg,
       slug: 'objetos',
     };
 

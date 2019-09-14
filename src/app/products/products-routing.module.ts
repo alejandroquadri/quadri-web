@@ -10,15 +10,15 @@ import { CustomComponent } from './custom/custom.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: ProdMenuComponent
-  },
-  {
     path: 'quarzo',
-    component: QuarzoComponent
+    component: CustomComponent
   },
   {
     path: 'custom',
+    component: CustomComponent
+  },
+  {
+    path: 'durella',
     component: CustomComponent
   },
   {

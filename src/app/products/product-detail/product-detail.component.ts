@@ -22,7 +22,7 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit() {
     this.prod = this.route.snapshot.paramMap.getAll('id')[0];
     this.model = this.route.snapshot.paramMap.getAll('prod')[0];
-    const prod = this.staticData.data.products.collections[this.prod];
+    const prod = this.staticData.data.products[this.prod];
     this.modelData = prod.models[this.model];
 
     const metaTags = {

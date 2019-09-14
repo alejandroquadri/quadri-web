@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import {
   trigger,
@@ -49,7 +49,6 @@ export class ContactComponent implements OnInit {
   constructor(
     private contactData: ContactService,
     private fb: FormBuilder,
-    private renderer: Renderer,
     private seoService: SeoService,
     private staticService: StaticService,
     @Inject(PLATFORM_ID) private platformId: Object

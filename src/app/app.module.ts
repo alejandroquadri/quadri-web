@@ -34,6 +34,7 @@ import { EmailCaptureComponent } from './shared/components/email-capture/email-c
 
 // esto es para precargar la data antes que se inicie la aplicacion
 export function DataProviderFactory(provider: StaticService) {
+  // return () => provider.getStaticData().toPromise();
   return () => provider.getStaticData();
 }
 

@@ -18,7 +18,7 @@ export class PiletasComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.product = this.staticData.data.products.collections.losetas.models.piletas;
+    this.product = this.staticData.data.products.losetas.models.piletas;
 
     const metaTags = {
       title: `Piletas | Quadri`,
