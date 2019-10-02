@@ -41,7 +41,7 @@ export class QueryComponent implements OnInit {
   buildForm() {
     this.myForm = this.fb.group({
       name: ['', Validators.required],
-      // telephone: ['', Validators.required],
+      telephone: [''],
       email: ['', Validators.required],
       query: ['', Validators.required]
     });

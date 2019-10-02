@@ -55,7 +55,7 @@ export class AppComponent {
       setTimeout( () => {
         // console.log('arranca el modal');
         const modalRef = this.modalService.open(EmailCaptureComponent, { centered: true});
-      }, 30000);
+      }, 60000);
     }
   }
 
