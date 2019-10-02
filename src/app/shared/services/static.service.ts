@@ -37,7 +37,7 @@ export class StaticService {
   getStaticData() {
     return new Promise( (resolve, reject) => {
       const exists = this.state.get(DATA_KEY, {} as any);
-      this.data$ = this.api.getObject('quadriNew')
+      this.data$ = this.api.getObject('staticData/web')
       .pipe(
         tap(obj => {
           this.state.set(DATA_KEY, obj);

@@ -15,10 +15,10 @@ export class ContactService {
   }
 
   saveQuery(query) {
-    return this.api.push('quadri/queries', query);
+    return this.api.push('queries', query);
   }
 
   captureEmail(email) {
-    return this.api.push('quadri/emails', {email: email});
+    return this.api.push('email_db', {email: email});
   }
 }

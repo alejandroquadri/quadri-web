@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "designweb-249da"
+    "default": "repmant-ce7a5"
+  },
+  "targets": {
+    "repmant-ce7a5": {
+      "hosting": {
+        "web": [
+          "web-quadri"
+        ]
+      }
+    }
   }
 }

@@ -1,23 +1,26 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
 
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyBYSbvYyni4W7foNBjOQ8JS8aCYFHaWHq4',
-    authDomain: 'designweb-249da.firebaseapp.com',
-    databaseURL: 'https://designweb-249da.firebaseio.com',
-    projectId: 'designweb-249da',
-    storageBucket: 'designweb-249da.appspot.com',
-    messagingSenderId: '629553616379'
+    apiKey: 'AIzaSyA5Mq1opoK6B4WaP-_KhEZ_CZVNZrJBb1E',
+    authDomain: 'repmant-ce7a5.firebaseapp.com',
+    databaseURL: 'https://repmant-ce7a5.firebaseio.com',
+    projectId: 'repmant-ce7a5',
+    storageBucket: 'repmant-ce7a5.appspot.com',
+    messagingSenderId: '872720422739'
   }
 };
 
-/*
- * In development mode, to ignore zone related error stack frames such as
- * `zone.run`, `zoneDelegate.invokeTask` for easier debugging, you can
- * import the following file, but please comment it out in production mode
- * because it will have performance impact when throw error
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+// export const environment = {
+//   production: false,
+//   firebase: {
+//     apiKey: 'AIzaSyBYSbvYyni4W7foNBjOQ8JS8aCYFHaWHq4',
+//     authDomain: 'designweb-249da.firebaseapp.com',
+//     databaseURL: 'https://designweb-249da.firebaseio.com',
+//     projectId: 'designweb-249da',
+//     storageBucket: 'designweb-249da.appspot.com',
+//     messagingSenderId: '629553616379'
+//   }
+// };
+

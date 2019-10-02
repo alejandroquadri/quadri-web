@@ -5,5 +5,5 @@ admin.initializeApp();
 import { send } from './functions/send-mail';
 
 exports.sendMail = functions.database
-.ref('/quadri/queries/{pushId}')
+.ref('/queries/{pushId}')
 .onCreate(send);
