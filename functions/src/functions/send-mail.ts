@@ -1,13 +1,14 @@
 import * as functions from 'firebase-functions';
 import * as nodemailer from 'nodemailer';
 
-export function send(snapshot:any, context:any) {
-
+// export function send(snapshot:any, context:any) {
+export function send(consulta) {
+  console.log(consulta);
   const user = functions.config().gmail.user;
   const pass = functions.config().gmail.pass;
   const mailTransport = nodemailer.createTransport(`smtps://${user}:${pass}@smtp.gmail.com`);
 
-  const consulta = snapshot.val();
+  // const consulta = snapshot.val();
 
   let interest, subject, text;
 

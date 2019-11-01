@@ -6,4 +6,16 @@ import { send } from './functions/send-mail';
 
 exports.sendMail = functions.database
 .ref('/queries/{pushId}')
-.onCreate(send);
+// .onCreate(send);
+.onCreate( (snap, context) => {
+  const consulta = snap.val();
+  return send(consulta);
+});
+
+exports.sendMailFirestore = functions.firestore
+.document('queries/{queryId}')
+.onCreate((snap, context) => {
+  const consulta = snap.data();
+  console.log(snap, consulta);
+  return send(consulta);
+});
