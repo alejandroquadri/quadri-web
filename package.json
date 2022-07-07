@@ -44,7 +44,7 @@
     "firebase": "^5.2.0",
     "firebase-tools": "^6.3.0",
     "font-awesome": "^4.7.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "npm": "^6.1.0",
     "rxjs": "^6.2.2",
     "yarn": "^1.7.0",
